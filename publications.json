@@ -1,53 +1,87 @@
+```json
 {
   "publications": [
+
     {
-      "title": "[Paper Title 1]",
+      "title": "Early detection of occupational stress: Enhancing workplace safety with machine learning and large language models",
+
       "authors": [
-        "Author 1*",
-        "Author 2*",
-        "Author 3",
-        "Author 4",
-        "Author 5",
-        "Author 6",
-        "Author 7",
-        "Author 8",
-        "Author 9",
-        "Author 10",
-        "Author 11†",
-        "Author 12†"
+        "M. J. Hasan",
+        "Jannat Sultana",
+        "S. Ahmed",
+        "Sifat Momen"
       ],
-      "venue": "Preprint (2025)",
+
+      "venue": "PLOS One (2025)",
+
       "thumbnail": "images/thumbs/1.jpg",
+
       "selected": 1,
+
       "award": "",
+
       "links": {
-        "pdf": "#",
-        "code": "#",
-        "project": "#"
+        "pdf": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0323265",
+        "code": "https://github.com/Jannat-sultana/occupational-stress-ml",
+        "project": "https://huggingface.co/spaces/JnS123456/Occupational_stress_detection"
       }
     },
+
+
     {
-      "title": "[Paper Title 2]",
+      "title": "Context-Aware Data Cleaning: Optimizing Bengali Text for Contextual Text Classification",
+
       "authors": [
-        "Author 1*",
-        "Author 2*",
-        "Author 3",
-        "Author 4",
-        "Author 5",
-        "Author 6",
-        "Author 7",
-        "Author 8",
-        "Author 9",
-        "Author 10",
-        "Author 11"
+        "M. R. Faisal",
+        "A. R. Fahad",
+        "S. Z. Ridoy",
+        "Jannat Sultana",
+        "Z. F. Ria",
+        "Md H. Rahman",
+        "M. A. Uddin",
+        "Rashedur M. Rahman"
       ],
-      "venue": "Preprint (2025)",
+
+      "venue": "SN Computer Science (2025)",
+
       "thumbnail": "images/thumbs/2.jpg",
-      "selected": 0,
+
+      "selected": 1,
+
       "award": "",
+
       "links": {
-        "pdf": "#"
+        "pdf": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mkQp4EMAAAAJ&citation_for_view=mkQp4EMAAAAJ:d1gkVwhDpl0C",
+        "code": "https://github.com/Jannat-sultana/Context_Aware_Data_Cleaning"
+      }
+    },
+
+
+    {
+      "title": "An Efficient Text Cleaning Pipeline for Clinical Text for Transformer Encoder Models",
+
+      "authors": [
+        "S. Z. Ridoy",
+        "Jannat Sultana",
+        "Z. F. Ria",
+        "M. A. Uddin",
+        "Md H. Rahman",
+        "Rashedur M. Rahman"
+      ],
+
+      "venue": "2024 IEEE 12th International Conference on Intelligent Systems (IS)",
+
+      "thumbnail": "images/thumbs/3.jpg",
+
+      "selected": 1,
+
+      "award": "Best Paper Award",
+
+      "links": {
+        "pdf": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mkQp4EMAAAAJ&citation_for_view=mkQp4EMAAAAJ:u-x6o8ySG0sC"
       }
     }
+
   ]
 }
+```
