@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="google-site-verification" content="nX639Kw32ilu8fD7-dVGOHDK9Vj6hYg2SnUjxtb2da0" />
+<meta name="description" content="Jannat Sultana — Lab Instructor, North South University. Research in AI, ML and NLP.">
+<meta name="keywords" content="Jannat Sultana, AI, Machine Learning, Natural Language Processing, Computer Vision, Research Portfolio">
+<meta name="author" content="Jannat Sultana">
+<meta name="robots" content="index, follow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jannat Sultana</title>
+<style>
+  :root{
+    --text:#1c1c1c;
+    --muted:#5a5a5a;
+    --rule:#dcdcdc;
+    --link:#1a4d8f;
+    --bg:#ffffff;
+    --max:700px;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:Georgia,'Times New Roman',serif;
+    font-size:17px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--link);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .wrap{max-width:var(--max);margin:0 auto;padding:64px 24px 96px;}
+
+  /* header */
+  .header{display:flex;gap:28px;align-items:flex-start;margin-bottom:12px;}
+  .header img{
+    width:132px;height:132px;object-fit:cover;object-position:center top;
+    flex:none;
+  }
+  .header .id h1{
+    font-size:26px;font-weight:normal;margin:0 0 4px;letter-spacing:0.2px;
+  }
+  .header .id .role{color:var(--muted);font-size:15.5px;margin:0 0 10px;}
+  .header .id .links{font-size:15px;color:var(--muted);}
+  .header .id .links a{margin-right:2px;}
+  .header .id .links .sep{margin:0 6px;color:var(--rule);}
+
+  .bio{margin:22px 0 8px;font-size:16.5px;}
+  .bio p{margin:0 0 14px;}
+
+  nav.jump{font-size:14.5px;color:var(--muted);margin:26px 0 0;}
+  nav.jump a{margin-right:14px;}
+
+  section{margin-top:46px;}
+  section h2{
+    font-size:15px;
+    font-weight:normal;
+    text-transform:none;
+    letter-spacing:0.2px;
+    color:var(--text);
+    border-bottom:1px solid var(--rule);
+    padding-bottom:8px;
+    margin:0 0 20px;
+  }
+
+  /* news */
+  .news-list{list-style:none;margin:0;padding:0;}
+  .news-list li{
+    display:flex;gap:16px;padding:8px 0;
+    border-bottom:1px solid var(--rule);font-size:15.5px;
+  }
+  .news-list li:last-child{border-bottom:none;}
+  .news-list .date{
+    flex:none;width:78px;color:var(--muted);font-size:14px;padding-top:1px;
+  }
+
+  /* publications */
+  .pub{display:flex;gap:16px;margin-bottom:24px;}
+  .pub .thumb{
+    width:96px;height:96px;flex:none;background:#f1f1ee;
+    border:1px solid var(--rule);display:flex;align-items:center;justify-content:center;
+    font-size:11px;color:var(--muted);text-align:center;padding:4px;
+  }
+  .pub .meta .title{font-weight:bold;margin:0 0 4px;}
+  .pub .meta .authors{margin:0 0 2px;color:var(--text);}
+  .pub .meta .authors .me{font-style:normal;text-decoration:underline;text-decoration-color:var(--rule);}
+  .pub .meta .venue{margin:0 0 2px;color:var(--muted);font-style:italic;}
+  .pub .meta .role{margin:0 0 6px;color:var(--muted);font-size:14.5px;}
+  .pub .meta .pub-links a{margin-right:12px;font-size:14.5px;}
+
+  /* generic list items (projects, awards) */
+  .entry{margin-bottom:20px;}
+  .entry .title{font-weight:bold;margin:0 0 4px;}
+  .entry .sub{color:var(--muted);margin:0 0 4px;font-size:15px;}
+  .entry p{margin:0 0 6px;}
+  .entry .entry-links a{margin-right:12px;font-size:14.5px;}
+
+  /* experience / teaching table-like rows */
+  .row{
+    display:flex;justify-content:space-between;gap:20px;
+    padding:10px 0;border-bottom:1px solid var(--rule);
+  }
+  .row:last-child{border-bottom:none;}
+  .row .left .title{font-weight:bold;margin:0 0 2px;}
+  .row .left .sub{color:var(--muted);font-size:15px;margin:0;}
+  .row .left .courses{margin:4px 0 0;font-size:15px;}
+  .row .date{color:var(--muted);font-size:14.5px;white-space:nowrap;flex:none;padding-top:2px;}
+
+  footer{margin-top:64px;color:var(--muted);font-size:13.5px;border-top:1px solid var(--rule);padding-top:18px;}
+
+  @media (max-width:520px){
+    .wrap{padding:40px 18px 64px;}
+    .header{flex-direction:column;align-items:flex-start;}
+    .header img{width:104px;height:104px;}
+    .pub{flex-direction:column;}
+    .pub .thumb{width:100%;height:120px;}
+    .row{flex-direction:column;gap:2px;}
+    .news-list li{flex-direction:column;gap:2px;}
+    .news-list .date{width:auto;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="header">
+    <img src="Jannat2.jpeg" alt="Jannat Sultana">
+    <div class="id">
+      <h1>Jannat Sultana</h1>
+      <p class="role"> Exploring AI | Computer Science Researcher | AI/ML for Healthcare </p>
+      <p class="links">
+        <a href="mailto:jannatsultana187@gmail.com">Email</a><span class="sep">/</span><a href="https://scholar.google.com/citations?user=mkQp4EMAAAAJ&hl=en" target="_blank">Google Scholar</a><span class="sep">/</span><a href="https://github.com/Jannat-sultana" target="_blank">GitHub</a><span class="sep">/</span><a href="https://www.linkedin.com/in/jannat-sultana/" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="bio">
+    <p>I am a Computer Science researcher interested in artificial intelligence, machine learning, and their applications in healthcare. I completed my BS in Computer Science and Engineering at North South University, where I also served as an Undergraduate Teaching Assistant and conducted undergraduate thesis research.</p>
+    <p>Currently, I work as a Research Assistant at the ELITE Research Lab, where I contribute to research involving machine learning and intelligent systems. Alongside my research, I work part-time as a Lab Instructor at North South University, supporting undergraduate courses and laboratory instruction.</p>
+    <p>My current research focus is on developing efficient, reliable, and data-driven computational systems for healthcare. I am particularly interested in machine learning, optimization, resource-efficient AI, and intelligent systems that can improve healthcare delivery, clinical decision-making, and the effective use of limited resources. I aim to develop practical and scalable computational approaches that address real-world challenges in healthcare.</p>
+  </div>
+
+  <nav class="jump">
+    <a href="#news">News</a><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#awards">Awards</a><a href="#teaching">Teaching</a><a href="#experience">Experience</a>
+  </nav>
+
+  <section id="news">
+    <h2>News</h2>
+    <ul class="news-list">
+      <li><span class="date">Jan 01, 2026</span> Started as a Research Assistant at ELITE Research Lab, where I contribute to research involving machine learning for Healthcare AI.</li>
+      <li><span class="date">Oct 15, 2025</span> Paper on predictive modeling of job satisfaction with explainable and generative AI published in <em>SN Computer Science</em>.</li>
+      <li><span class="date">Jun 10, 2025</span> Started as Lab Instructor at North South University, teaching Programming Language I Lab, and Microprocessor Interfacing and Embedded Systems Lab</li>
+      <li><span class="date">Jun 02, 2025</span> Paper on occupational stress detection with ML and LLMs published in <em>PLOS One</em>.</li>
+      <li><span class="date">Aug 29, 2024</span> Received the <strong>Best Paper Award</strong> at the 12th IEEE International Conference on Intelligent Systems (IS) for work on clinical text cleaning for transformer models.</li>
+    </ul>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+
+    <div class="pub">
+      <div class="thumb">PLOS One<br>2025</div>
+      <div class="meta">
+        <p class="title">Early detection of occupational stress: Enhancing workplace safety with machine learning and large language models</p>
+        <p class="authors">M. J. Hasan, <span class="me">Jannat Sultana</span>, S. Ahmed, Sifat Momen</p>
+        <p class="venue">PLOS One, 2025</p>
+        <p class="role">Role: Researcher</p>
+        <p class="pub-links">
+          <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0323265" target="_blank">paper</a><a href="https://github.com/Jannat-sultana/occupational-stress-ml" target="_blank">code</a><a href="https://huggingface.co/spaces/JnS123456/Occupational_stress_detection" target="_blank">demo</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="thumb">SN Computer<br>Science<br>2025</div>
+      <div class="meta">
+        <p class="title">Context-Aware Data Cleaning: Optimizing Bengali Text for Contextual Text Classification</p>
+        <p class="authors">M. R. Faisal, A. R. Fahad, S. Z. Ridoy, <span class="me">Jannat Sultana</span>, Z. F. Ria, Md H. Rahman, M. A. Uddin, Rashedur M. Rahman</p>
+        <p class="venue">SN Computer Science, 2025</p>
+        <p class="role">Role: Researcher</p>
+        <p class="pub-links">
+          <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mkQp4EMAAAAJ&citation_for_view=mkQp4EMAAAAJ:d1gkVwhDpl0C" target="_blank">paper</a><a href="https://github.com/Jannat-sultana/Context_Aware_Data_Cleaning" target="_blank">code</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="thumb">IEEE IS<br>2024<br>★ Best Paper</div>
+      <div class="meta">
+        <p class="title">An Efficient Text Cleaning Pipeline for Clinical Text for Transformer Encoder Models</p>
+        <p class="authors">S. Z. Ridoy, <span class="me">Jannat Sultana</span>, Z. F. Ria, M. A. Uddin, Md H. Rahman, Rashedur M. Rahman</p>
+        <p class="venue">2024 IEEE 12th International Conference on Intelligent Systems (IS)</p>
+        <p class="role">Role: Project Lead</p>
+        <p class="pub-links">
+          <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mkQp4EMAAAAJ&citation_for_view=mkQp4EMAAAAJ:u-x6o8ySG0sC" target="_blank">paper</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Selected Projects</h2>
+
+    <div class="entry">
+      <p class="title">Hand Gesture Virtual Keyboard</p>
+      <p>A computer vision-based virtual keyboard that allows users to type without physical contact using hand gestures captured through a webcam.</p>
+      <p class="entry-links"><a href="https://github.com/Jannat-sultana/hand-gesture-virtual-keyboard" target="_blank">code &amp; demo</a></p>
+    </div>
+
+    <div class="entry">
+      <p class="title">Air Quality Analysis in Dhaka</p>
+      <p>Analysis of PM2.5 air quality data for Dhaka, focusing on trends, preprocessing, and preparing hourly measurements — AQI, NowCast Concentration, AQI Category — for machine learning models.</p>
+      <p class="entry-links"><a href="https://github.com/Jannat-sultana/Air-Quality-Index-Prediction" target="_blank">code</a></p>
+    </div>
+  </section>
+
+  <section id="awards">
+    <h2>Awards</h2>
+
+    <div class="entry">
+        <p class="title">Best Paper Award</p>
+        <p class="sub">12th International IEEE Conference on Intelligent Systems, 2024</p>
+        <p>For developing an efficient text cleaning pipeline for clinical texts for transformer encoder models.</p>
+        <p class="entry-links"><a href="https://github.com/Jannat-sultana/JannatSultana.github.io/blob/main/Award_best_paper.pdf" target="_blank">certificate</a></p>
+      </div>
+
+    <div class="entry">
+      <p class="title">People’s Choice Award</p>
+      <p class="sub">3 Minute Thesis (3MT) Bangladesh 2025</p>
+      <p>By Elite Research Lab LLC</p>
+      <p class="entry-links"><a href="https://github.com/Jannat-sultana/JannatSultana.github.io/blob/main/Award_best_paper.pdf" target="_blank">certificate</a></p>
+    </div>
+
+    <div class="entry">
+      <p class="title">Magna Cum Laude</p>
+      <p class="sub">North South University, Dhaka, Bangladesh — CGPA-based award</p>
+      <p class="entry-links"><a href="https://www.scribd.com/document/528095287/NSU-Grading-Policy" target="_blank">grading policy</a></p>
+    </div>
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching</h2>
+
+    <div class="row">
+      <div class="left">
+        <p class="title">Database Systems Lab</p>
+        <p class="sub">North South University</p>
+      </div>
+      <div class="date">Jun 2025 – Present</div>
+    </div>
+    <div class="row">
+      <div class="left">
+        <p class="title">Digital Logic Design Lab</p>
+        <p class="sub">North South University</p>
+      </div>
+      <div class="date">Jun 2025 – Present</div>
+    </div>
+    <div class="row">
+      <div class="left">
+        <p class="title">Computer Organization and Architecture Lab</p>
+        <p class="sub">North South University</p>
+      </div>
+      <div class="date">Jun 2025 – Present</div>
+    </div>
+    <div class="row">
+      <div class="left">
+        <p class="title">Machine Learning</p>
+        <p class="sub">North South University</p>
+      </div>
+      <div class="date">Feb 2025 – Jun 2025</div>
+    </div>
+    <div class="row">
+      <div class="left">
+        <p class="title">Microprocessor Interfacing &amp; Embedded System</p>
+        <p class="sub">North South University</p>
+      </div>
+      <div class="date">Feb 2023 – Dec 2024</div>
+    </div>
+    <div class="row">
+      <div class="left">
+        <p class="title">Computer Organization and Architecture</p>
+        <p class="sub">North South University</p>
+      </div>
+      <div class="date">Feb 2023 – Dec 2024</div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="row">
+        <div class="left">
+          <p class="title">Research Assistant</p>
+          <p class="sub">ELITE Research Lab</p>
+          <p class="courses">Research planning &amp; methodology, paper writing, mentoring junior researchers</p>
+        </div>
+        <div class="date">Jan 2026 – Present</div>
+      </div>
+    <div class="row">
+      <div class="left">
+        <p class="title">Lab Instructor</p>
+        <p class="sub">North South University, Dhaka, Bangladesh</p>
+        <p class="courses">Programming Language I Lab, Microprocessor Interfacing and Embedded Systems Lab .Database Systems Lab</p>
+      </div>
+      <div class="date">Jun 2025 – Present</div>
+    </div>
+      <div class="date">Jul 2024 – Present</div>
+    </div>
+    <div class="row">
+      <div class="left">
+        <p class="title">Graduate Teaching Assistant</p>
+        <p class="sub">North South University, Dhaka, Bangladesh</p>
+        <p class="courses">Course: Machine Learning</p>
+      </div>
+      <div class="date">Feb 2025 – May 2025</div>
+    </div>
+    <div class="row">
+      <div class="left">
+        <p class="title">Undergraduate Teaching Assistant</p>
+        <p class="sub">North South University, Dhaka, Bangladesh</p>
+        <p class="courses">Microprocessor Interfacing &amp; Embedded System · Computer Organization and Architecture</p>
+      </div>
+      <div class="date">Feb 2023 – Dec 2024</div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; Jannat Sultana. Last updated September 2026.
+  </footer>
+
+</div>
+</body>
+</html>
