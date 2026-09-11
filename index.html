@@ -1,387 +1,1651 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="google-site-verification" content="nX639Kw32ilu8fD7-dVGOHDK9Vj6hYg2SnUjxtb2da0" />
-<meta name="description" content="Jannat Sultana — Lab Instructor, North South University. Research in AI, ML and NLP.">
-<meta name="keywords" content="Jannat Sultana, AI, Machine Learning, Natural Language Processing, Computer Vision, Research Portfolio">
-<meta name="author" content="Jannat Sultana">
-<meta name="robots" content="index, follow">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jannat Sultana</title>
-<style>
-  :root{
-    --text:#1c1c1c;
-    --muted:#5a5a5a;
-    --rule:#dcdcdc;
-    --link:#1a4d8f;
-    --bg:#ffffff;
-    --highlight-bg:#fbf3df;
-    --highlight-border:#c98a1e;
-    --max:700px;
-  }
-  *{box-sizing:border-box;}
-  body{
-    margin:0;
-    background:var(--bg);
-    color:var(--text);
-    font-family:Georgia,'Times New Roman',serif;
-    font-size:17px;
-    line-height:1.65;
-    -webkit-font-smoothing:antialiased;
-  }
-  a{color:var(--link);text-decoration:none;}
-  a:hover{text-decoration:underline;}
-  .wrap{max-width:var(--max);margin:0 auto;padding:64px 24px 96px;}
 
-  /* header */
-  .header{display:flex;gap:28px;align-items:flex-start;margin-bottom:12px;}
-  .header img{
-    width:132px;height:132px;object-fit:cover;object-position:center top;
-    flex:none;
-  }
-  .header .id h1{
-    font-size:26px;font-weight:normal;margin:0 0 4px;letter-spacing:0.2px;
-  }
-  .header .id .role{color:var(--muted);font-size:15.5px;margin:0 0 10px;}
-  .header .id .links{font-size:15px;color:var(--muted);}
-  .header .id .links a{margin-right:2px;}
-  .header .id .links .sep{margin:0 6px;color:var(--rule);}
+  <!-- Google Search Console verification -->
+  <meta name="google-site-verification" content="nX639Kw32ilu8fD7-dVGOHDK9Vj6hYg2SnUjxtb2da0" />
 
-  .bio{margin:22px 0 8px;font-size:16.5px;}
-  .bio p{margin:0 0 14px; text-align: justify;}
+  <!-- Basic SEO -->
+  <meta name="description"
+        content="Jannat Sultana is a Computer Science researcher working in machine learning, natural language processing, and healthcare AI. Research Assistant at ELITE Research Lab and Lab Instructor at North South University. Seeking PhD opportunities for Fall 2027.">
 
-  /* seeking / highlight callout */
-  .seeking{
-    background:var(--highlight-bg);
-    border-left:3px solid var(--highlight-border);
-    padding:10px 14px;
-    margin:18px 0 22px;
-    font-size:15.5px;
-    font-weight:bold;
-    color:#5a3d0a;
-  }
+  <meta name="keywords"
+        content="Jannat Sultana, Computer Science Researcher, Machine Learning, Natural Language Processing, NLP, Healthcare AI, Artificial Intelligence, Research Assistant, North South University, PhD">
 
-  nav.jump{font-size:14.5px;color:var(--muted);margin:26px 0 0;}
-  nav.jump a{margin-right:14px;}
+  <meta name="author" content="Jannat Sultana">
+  <meta name="robots" content="index, follow">
 
-  section{margin-top:46px;}
-  section h2{
-    font-size:15px;
-    font-weight:normal;
-    text-transform:none;
-    letter-spacing:0.2px;
-    color:var(--text);
-    border-bottom:1px solid var(--rule);
-    padding-bottom:8px;
-    margin:0 0 20px;
-  }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  /* news — scrollable box */
-  .news-box{
-    border:1px solid var(--rule);
-    border-radius:4px;
-    max-height:230px;
-    overflow-y:auto;
-    padding:4px 16px;
-  }
-  .news-list{list-style:none;margin:0;padding:0;}
-  .news-list li{
-    display:flex;gap:16px;padding:10px 0;
-    border-bottom:1px solid var(--rule);font-size:15.5px;
-  }
-  .news-list li:last-child{border-bottom:none;}
-  .news-list .date{
-    flex:none;width:92px;color:var(--muted);font-size:13.5px;padding-top:1px;
-  }
+  <!-- Page title -->
+  <title>Jannat Sultana | Computer Science Researcher</title>
 
-  /* publications */
-  .pub{display:flex;gap:16px;margin-bottom:28px;}
-  .pub .thumb{
-    width:110px;height:110px;flex:none;background:#f1f1ee;
-    border:1px solid var(--rule);display:flex;align-items:center;justify-content:center;
-    font-size:11px;color:var(--muted);text-align:center;padding:4px;overflow:hidden;
-  }
-  .pub .thumb img{width:100%;height:100%;object-fit:cover;display:block;}
-  .pub .meta{flex:1;min-width:0;}
-  .pub .meta .title{font-weight:bold;margin:0 0 4px;}
-  .pub .meta .authors{margin:0 0 2px;color:var(--text);}
-  .pub .meta .authors .me{font-style:normal;text-decoration:underline;text-decoration-color:var(--rule);}
-  .pub .meta .venue{margin:0 0 2px;color:var(--muted);font-style:italic;}
-  .pub .meta .role{margin:0 0 6px;color:var(--muted);font-size:14.5px;}
-  .pub .meta .pub-links a{margin-right:12px;font-size:14.5px;}
-  .pub .meta details{margin-top:6px;font-size:14.5px;}
-  .pub .meta details summary{
-    cursor:pointer;color:var(--link);list-style:none;
-  }
-  .pub .meta details summary::-webkit-details-marker{display:none;}
-  .pub .meta details summary:before{content:"▸ ";}
-  .pub .meta details[open] summary:before{content:"▾ ";}
-  .pub .meta details p{margin:6px 0 0;color:var(--text);font-size:14.5px;line-height:1.55;}
+  <!-- Canonical URL
+       IMPORTANT: Replace this with your actual portfolio URL -->
+  <link rel="canonical" href="https://jannat-sultana.github.io/">
 
-  /* generic list items (projects, awards) */
-  .entry{margin-bottom:20px;}
-  .entry .title{font-weight:bold;margin:0 0 4px;}
-  .entry .sub{color:var(--muted);margin:0 0 4px;font-size:15px;}
-  .entry p{margin:0 0 6px;}
-  .entry .entry-links a{margin-right:12px;font-size:14.5px;}
+  <!-- Open Graph -->
+  <meta property="og:title"
+        content="Jannat Sultana | Computer Science Researcher">
 
-  /* experience / teaching table-like rows */
-  .row{
-    display:flex;justify-content:space-between;gap:20px;
-    padding:10px 0;border-bottom:1px solid var(--rule);
+  <meta property="og:description"
+        content="Research in machine learning, NLP, and healthcare AI. Seeking PhD opportunities for Fall 2027.">
+
+  <meta property="og:type" content="profile">
+
+  <!-- IMPORTANT: Replace with your actual portfolio URL -->
+  <meta property="og:url" content="https://jannat-sultana.github.io/">
+
+  <!-- IMPORTANT: Replace with your actual portfolio URL -->
+  <meta property="og:image" content="https://jannat-sultana.github.io/Jannat2.jpeg">
+
+  <style>
+
+    :root {
+      --text: #1c1c1c;
+      --muted: #5a5a5a;
+      --rule: #dcdcdc;
+      --link: #1a4d8f;
+      --bg: #ffffff;
+
+      --highlight-bg: #fbf3df;
+      --highlight-border: #c98a1e;
+
+      --max: 800px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 17px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 64px 24px 96px;
+    }
+
+    /* =========================
+       HEADER
+       ========================= */
+
+    .header {
+      display: flex;
+      gap: 28px;
+      align-items: flex-start;
+      margin-bottom: 12px;
+    }
+
+    .header img {
+      width: 132px;
+      height: 132px;
+      object-fit: cover;
+      object-position: center top;
+      flex: none;
+    }
+
+    .header .id h1 {
+      font-size: 28px;
+      font-weight: normal;
+      margin: 0 0 4px;
+      letter-spacing: 0.2px;
+    }
+
+    .header .id .role {
+      color: var(--muted);
+      font-size: 15.5px;
+      margin: 0 0 10px;
+    }
+
+    .header .id .links {
+      font-size: 15px;
+      color: var(--muted);
+    }
+
+    .header .id .links a {
+      margin-right: 2px;
+    }
+
+    .header .id .links .sep {
+      margin: 0 6px;
+      color: var(--rule);
+    }
+
+    /* =========================
+       PHD SEEKING NOTICE
+       ========================= */
+
+    .seeking {
+      background: var(--highlight-bg);
+      border-left: 3px solid var(--highlight-border);
+      padding: 10px 14px;
+      margin: 22px 0 24px;
+      font-size: 15.5px;
+      font-weight: bold;
+      color: #5a3d0a;
+    }
+
+    /* =========================
+       BIO
+       ========================= */
+
+    .bio {
+      margin: 22px 0 8px;
+      font-size: 16.5px;
+    }
+
+    .bio p {
+      margin: 0 0 15px;
+      text-align: justify;
+    }
+
+    /* =========================
+       NAVIGATION
+       ========================= */
+
+    nav.jump {
+      font-size: 14.5px;
+      color: var(--muted);
+      margin: 28px 0 0;
+      line-height: 2;
+    }
+
+    nav.jump a {
+      margin-right: 14px;
+      white-space: nowrap;
+    }
+
+    /* =========================
+       SECTIONS
+       ========================= */
+
+    section {
+      margin-top: 48px;
+    }
+
+    section h2 {
+      font-size: 16px;
+      font-weight: normal;
+      letter-spacing: 0.2px;
+      color: var(--text);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 8px;
+      margin: 0 0 20px;
+    }
+
+    /* =========================
+       RESEARCH INTERESTS
+       ========================= */
+
+    .interest-list {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .interest-list li {
+      margin-bottom: 6px;
+    }
+
+    /* =========================
+       CURRENT RESEARCH
+       ========================= */
+
+    .research-item {
+      margin-bottom: 18px;
+    }
+
+    .research-item .title {
+      font-weight: bold;
+      margin: 0 0 4px;
+    }
+
+    .research-item p {
+      margin: 0;
+    }
+
+    /* =========================
+       NEWS
+       ========================= */
+
+    .news-box {
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      max-height: 230px;
+      overflow-y: auto;
+      padding: 4px 16px;
+    }
+
+    .news-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .news-list li {
+      display: flex;
+      gap: 16px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--rule);
+      font-size: 15.5px;
+    }
+
+    .news-list li:last-child {
+      border-bottom: none;
+    }
+
+    .news-list .date {
+      flex: none;
+      width: 92px;
+      color: var(--muted);
+      font-size: 13.5px;
+      padding-top: 1px;
+    }
+
+    /* =========================
+       PUBLICATIONS
+       ========================= */
+
+    .pub {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+
+    .pub .thumb {
+      width: 110px;
+      height: 110px;
+      flex: none;
+
+      background: #f1f1ee;
+      border: 1px solid var(--rule);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 11px;
+      color: var(--muted);
+      text-align: center;
+
+      padding: 4px;
+      overflow: hidden;
+    }
+
+    .pub .thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .pub .meta {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .pub .meta .title {
+      font-weight: bold;
+      margin: 0 0 4px;
+    }
+
+    .pub .meta .authors {
+      margin: 0 0 2px;
+      color: var(--text);
+    }
+
+    .pub .meta .authors .me {
+      font-weight: bold;
+    }
+
+    .pub .meta .venue {
+      margin: 0 0 2px;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    .pub .meta .role {
+      margin: 0 0 6px;
+      color: var(--muted);
+      font-size: 14.5px;
+    }
+
+    .pub .meta .pub-links a {
+      margin-right: 12px;
+      font-size: 14.5px;
+    }
+
+    .pub .meta details {
+      margin-top: 6px;
+      font-size: 14.5px;
+    }
+
+    .pub .meta details summary {
+      cursor: pointer;
+      color: var(--link);
+      list-style: none;
+    }
+
+    .pub .meta details summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .pub .meta details summary:before {
+      content: "▸ ";
+    }
+
+    .pub .meta details[open] summary:before {
+      content: "▾ ";
+    }
+
+    .pub .meta details p {
+      margin: 6px 0 0;
+      color: var(--text);
+      font-size: 14.5px;
+      line-height: 1.55;
+    }
+
+    /* =========================
+       EDUCATION
+       ========================= */
+
+    .education-entry {
+      margin-bottom: 20px;
+    }
+
+    .education-entry .title {
+      font-weight: bold;
+      margin: 0 0 3px;
+    }
+
+    .education-entry .sub {
+      color: var(--muted);
+      font-size: 15px;
+      margin: 0 0 3px;
+    }
+
+    .education-entry p {
+      margin: 0;
+    }
+
+    /* =========================
+       PROJECTS
+       ========================= */
+
+    .entry {
+      margin-bottom: 20px;
+    }
+
+    .entry .title {
+      font-weight: bold;
+      margin: 0 0 4px;
+    }
+
+    .entry .sub {
+      color: var(--muted);
+      margin: 0 0 4px;
+      font-size: 15px;
+    }
+
+    .entry p {
+      margin: 0 0 6px;
+    }
+
+    .entry .entry-links a {
+      margin-right: 12px;
+      font-size: 14.5px;
+    }
+
+    /* =========================
+       AWARDS
+       ========================= */
+
+    /* =========================
+       EXPERIENCE / TEACHING
+       ========================= */
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+
+      padding: 10px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .row:last-child {
+      border-bottom: none;
+    }
+
+    .row .left .title {
+      font-weight: bold;
+      margin: 0 0 2px;
+    }
+
+    .row .left .sub {
+      color: var(--muted);
+      font-size: 15px;
+      margin: 0;
+    }
+
+    .row .left .courses {
+      margin: 4px 0 0;
+      font-size: 15px;
+    }
+
+    .row .date {
+      color: var(--muted);
+      font-size: 14.5px;
+      white-space: nowrap;
+      flex: none;
+      padding-top: 2px;
+    }
+
+    /* =========================
+       FOOTER
+       ========================= */
+
+    footer {
+      margin-top: 64px;
+      color: var(--muted);
+      font-size: 13.5px;
+      border-top: 1px solid var(--rule);
+      padding-top: 18px;
+    }
+
+    /* =========================
+       MOBILE
+       ========================= */
+
+    @media (max-width: 520px) {
+
+      .wrap {
+        padding: 40px 18px 64px;
+      }
+
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .header img {
+        width: 104px;
+        height: 104px;
+      }
+
+      .header .id h1 {
+        font-size: 26px;
+      }
+
+      .pub {
+        flex-direction: column;
+      }
+
+      .pub .thumb {
+        width: 100%;
+        height: 140px;
+      }
+
+      .row {
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      .news-list li {
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      .news-list .date {
+        width: auto;
+      }
+
+    }
+
+  </style>
+
+
+  <!--
+    Person structured data for search engines.
+    Replace YOUR-DOMAIN with your actual website URL.
+  -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jannat Sultana",
+    "url": "https://jannat-sultana.github.io/",
+    "jobTitle": "Computer Science Researcher",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "North South University"
+    },
+    "sameAs": [
+      "https://scholar.google.com/citations?user=mkQp4EMAAAAJ&hl=en",
+      "https://github.com/Jannat-sultana",
+      "https://www.linkedin.com/in/jannat-sultana/"
+    ]
   }
-  .row:last-child{border-bottom:none;}
-  .row .left .title{font-weight:bold;margin:0 0 2px;}
-  .row .left .sub{color:var(--muted);font-size:15px;margin:0;}
-  .row .left .courses{margin:4px 0 0;font-size:15px;}
-  .row .date{color:var(--muted);font-size:14.5px;white-space:nowrap;flex:none;padding-top:2px;}
+  </script>
 
-  footer{margin-top:64px;color:var(--muted);font-size:13.5px;border-top:1px solid var(--rule);padding-top:18px;}
-
-  @media (max-width:520px){
-    .wrap{padding:40px 18px 64px;}
-    .header{flex-direction:column;align-items:flex-start;}
-    .header img{width:104px;height:104px;}
-    .pub{flex-direction:column;}
-    .pub .thumb{width:100%;height:140px;}
-    .row{flex-direction:column;gap:2px;}
-    .news-list li{flex-direction:column;gap:2px;}
-    .news-list .date{width:auto;}
-  }
-</style>
 </head>
+
+
 <body>
+
 <div class="wrap">
 
+
+  <!-- =========================
+       HEADER
+       ========================= -->
+
   <div class="header">
-    <img src="Jannat2.jpeg" alt="Jannat Sultana">
+
+    <img src="Jannat2.jpeg"
+         alt="Jannat Sultana">
+
     <div class="id">
+
       <h1>Jannat Sultana</h1>
-      <p class="role">Exploring AI | Computer Science Researcher | AI/ML for Healthcare</p>
-      <p class="links">
-        <a href="mailto:jannatsultana187@gmail.com">Email</a><span class="sep">/</span><a href="https://scholar.google.com/citations?user=mkQp4EMAAAAJ&hl=en" target="_blank">Google Scholar</a><span class="sep">/</span><a href="https://github.com/Jannat-sultana" target="_blank">GitHub</a><span class="sep">/</span><a href="https://www.linkedin.com/in/jannat-sultana/" target="_blank">LinkedIn</a>
+
+      <p class="role">
+        Computer Science Researcher | Machine Learning, NLP &amp; Healthcare AI
       </p>
+
+      <p class="links">
+
+        <a href="mailto:jannatsultana187@gmail.com">
+          Email
+        </a>
+
+        <span class="sep">/</span>
+
+        <a href="Jannat_Sultana_CV.pdf" target="_blank">
+          CV
+        </a>
+
+        <span class="sep">/</span>
+
+        <a href="https://scholar.google.com/citations?user=mkQp4EMAAAAJ&hl=en"
+           target="_blank">
+          Google Scholar
+        </a>
+
+        <span class="sep">/</span>
+
+        <a href="https://github.com/Jannat-sultana"
+           target="_blank">
+          GitHub
+        </a>
+
+        <span class="sep">/</span>
+
+        <a href="https://www.linkedin.com/in/jannat-sultana/"
+           target="_blank">
+          LinkedIn
+        </a>
+
+      </p>
+
     </div>
+
   </div>
 
-  <p class="seeking">I am actively seeking PhD opportunities starting in Fall 2027.</p>
+
+  <!-- =========================
+       PHD NOTICE
+       ========================= -->
+
+  <div class="seeking">
+    I am actively seeking PhD opportunities starting in Fall 2027.
+  </div>
+
+
+  <!-- =========================
+       BIO
+       ========================= -->
 
   <div class="bio">
-    <p>I am a Computer Science researcher interested in artificial intelligence, machine learning, and their applications in healthcare. I completed my <strong>BS in Computer Science and Engineering at North South University</strong>, where I also served as an <strong>Undergraduate Teaching Assistant and conducted undergraduate thesis research </strong>.</p>
-    <p>Currently, I work as a <strong>Research Assistant at the ELITE Research Lab</strong>, where I contribute to research involving machine learning and intelligent systems. Alongside my research, I work <strong>part-time as a Lab Instructor at North South University</strong>, supporting undergraduate courses and laboratory instruction.</p>
-    <p><strong>My current research focus is on developing efficient, reliable, and data-driven computational systems for healthcare</strong>. I am particularly interested in machine learning, optimization, resource-efficient AI, and intelligent systems that can improve healthcare delivery, clinical decision-making, and the effective use of limited resources. I aim to develop practical and scalable computational approaches that address real-world challenges in healthcare.</p>
+
+    <p>
+      I am a <strong>Computer Science researcher</strong> working at the
+      intersection of <strong>machine learning, natural language processing,
+      and healthcare AI</strong>. I am particularly interested in developing
+      <strong>reliable, efficient, and data-driven computational methods</strong>
+      for real-world healthcare problems.
+    </p>
+
+    <p>
+      I completed my <strong>B.S. in Computer Science and Engineering at
+      North South University</strong>, where I conducted undergraduate research
+      and worked as an <strong>Undergraduate Teaching Assistant</strong>.
+      I currently work as a <strong>Research Assistant at the ELITE Research Lab</strong>
+      and as a <strong>Lab Instructor at North South University</strong>.
+    </p>
+
+    <p>
+      My research experience spans <strong>machine learning, NLP,
+      transformer-based models, clinical text processing, and healthcare
+      applications</strong>. I am particularly interested in
+      <strong>resource-efficient AI, reliable machine learning, and intelligent
+      systems</strong> that can support healthcare delivery and decision-making.
+      I am seeking <strong>PhD opportunities for Fall 2027</strong> where I can
+      pursue research in these areas.
+    </p>
+
   </div>
 
+
+  <!-- =========================
+       NAVIGATION
+       ========================= -->
+
   <nav class="jump">
-    <a href="#news">News</a><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#awards">Awards</a><a href="#teaching">Teaching</a><a href="#experience">Experience</a>
+
+    <a href="#research-interests">Research Interests</a>
+
+    <a href="#current-research">Current Research</a>
+
+    <a href="#news">News</a>
+
+    <a href="#publications">Publications</a>
+
+    <a href="#education">Education</a>
+
+    <a href="#projects">Projects</a>
+
+    <a href="#awards">Awards</a>
+
+    <a href="#experience">Experience</a>
+
+    <a href="#teaching">Teaching</a>
+
   </nav>
 
-  <section id="news">
-    <h2>News</h2>
-    <div class="news-box">
-      <ul class="news-list">
-        <li><span class="date">Jan 01, 2026</span> Joined ELITE Research Lab as a Research Assistant, working on machine learning for healthcare AI.</li>
-        <li><span class="date">Oct 15, 2025</span> Our paper on predictive modeling of job satisfaction using explainable and generative AI was published in SN Computer Science.</li>
-        <li><span class="date">Jun 10, 2025</span> Started as a Lab Instructor at North South University, teaching the Programming Language I and Microprocessor Interfacing &amp; Embedded Systems labs.</li>
-        <li><span class="date">Jun 02, 2025</span> Our paper on detecting occupational stress with machine learning and large language models was published in PLOS One.</li>
-        <li><span class="date">Aug 29, 2024</span> Won the Best Paper Award at the 12th IEEE International Conference on Intelligent Systems for our clinical text-cleaning pipeline for transformer models.</li>
-      </ul>
-    </div>
+
+  <!-- =========================
+       RESEARCH INTERESTS
+       ========================= -->
+
+  <section id="research-interests">
+
+    <h2>Research Interests</h2>
+
+    <ul class="interest-list">
+
+      <li>Machine Learning</li>
+
+      <li>Natural Language Processing</li>
+
+      <li>Healthcare AI</li>
+
+      <li>Clinical NLP and Transformer-Based Models</li>
+
+      <li>Resource-Efficient AI</li>
+
+      <li>Reliable and Explainable Machine Learning</li>
+
+      <li>Intelligent Healthcare Systems</li>
+
+    </ul>
+
   </section>
+
+
+  <!-- =========================
+       CURRENT RESEARCH
+       ========================= -->
+
+  <section id="current-research">
+
+    <h2>Current Research</h2>
+
+    <div class="research-item">
+
+      <p class="title">
+        Machine Learning for Healthcare
+      </p>
+
+      <p>
+        Developing <strong>efficient, reliable, and data-driven machine
+        learning approaches</strong> for healthcare applications, with an
+        emphasis on practical computational methods that can support
+        healthcare delivery and decision-making.
+      </p>
+
+    </div>
+
+    <div class="research-item">
+
+      <p class="title">
+        NLP and Transformer-Based Models
+      </p>
+
+      <p>
+        Investigating <strong>natural language processing, transformer-based
+        models, and clinical text processing</strong> for building effective
+        and reliable intelligent systems.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       NEWS
+       ========================= -->
+
+  <section id="news">
+
+    <h2>News</h2>
+
+    <div class="news-box">
+
+      <ul class="news-list">
+
+        <li>
+          <span class="date">Jan 01, 2026</span>
+          Joined ELITE Research Lab as a Research Assistant, working on
+          machine learning for healthcare AI.
+        </li>
+
+        <li>
+          <span class="date">Oct 15, 2025</span>
+          Our paper on predictive modeling of job satisfaction using
+          explainable and generative AI was published in SN Computer Science.
+        </li>
+
+        <li>
+          <span class="date">Jun 10, 2025</span>
+          Started as a Lab Instructor at North South University, teaching
+          the Programming Language I and Microprocessor Interfacing &amp;
+          Embedded Systems labs.
+        </li>
+
+        <li>
+          <span class="date">Jun 02, 2025</span>
+          Our paper on detecting occupational stress with machine learning
+          and large language models was published in PLOS One.
+        </li>
+
+        <li>
+          <span class="date">Aug 29, 2024</span>
+          Won the Best Paper Award at the 12th IEEE International Conference
+          on Intelligent Systems for our clinical text-cleaning pipeline
+          for transformer models.
+        </li>
+
+      </ul>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       PUBLICATIONS
+       ========================= -->
 
   <section id="publications">
+
     <h2>Publications</h2>
 
-    <div class="pub">
-      <div class="thumb">
-        <!-- Add a system-diagram / figure image here, e.g. figures/pub1-diagram.png -->
-        <img src="figures/pub1-diagram.png" alt="System diagram — occupational stress detection pipeline" onerror="this.parentElement.innerHTML='PLOS One<br>2025';">
-      </div>
-      <div class="meta">
-        <p class="title">Early detection of occupational stress: Enhancing workplace safety with machine learning and large language models</p>
-        <p class="authors">M. J. Hasan, <span class="me">Jannat Sultana</span>, S. Ahmed, Sifat Momen</p>
-        <p class="venue">PLOS One, 2025</p>
-        <p class="role">Role: Researcher</p>
-        <p class="pub-links">
-          <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0323265" target="_blank">paper</a><a href="papers/occupational-stress.pdf" target="_blank">pdf</a><a href="https://github.com/Jannat-sultana/occupational-stress-ml" target="_blank">code</a><a href="https://huggingface.co/spaces/JnS123456/Occupational_stress_detection" target="_blank">demo</a>
-        </p>
-        <details>
-          <summary>Abstract</summary>
-          <p>Occupational stress undermines both employee wellbeing and workplace safety, yet most detection methods rely on slow, subjective survey analysis. This work builds a machine-learning pipeline — combining a hybrid RFECV/ANOVA feature-selection step, a 1D-CNN, and several BERT-family language models — on a Malaysian workplace survey dataset. A three-model ensemble reached 90.32% accuracy, the highest reported for this task, and stayed robust across cross-validation and synthetic-data testing. Explainable-AI analysis (SHAP/LIME) traced most of the stress signal to workload, ambiguity, and communication problems, and the resulting model was deployed as a public, real-time screening tool.</p>
-        </details>
-      </div>
-    </div>
+
+<!-- Publication 1 -->
 
     <div class="pub">
+
       <div class="thumb">
-        <!-- Add a system-diagram / figure image here, e.g. figures/pub2-diagram.png -->
-        <img src="figures/pub2-diagram.png" alt="Context-aware data cleaning pipeline diagram" onerror="this.parentElement.innerHTML='SN Computer<br>Science<br>2025';">
+
+        <img src="js.png"
+             alt="job satisfaction pipeline diagram"
+             onerror="this.parentElement.innerHTML='SN Computer<br>Science<br>2025';">
+
       </div>
+
       <div class="meta">
-        <p class="title">Context-Aware Data Cleaning: Optimizing Bengali Text for Contextual Text Classification</p>
-        <p class="authors">M. R. Faisal, A. R. Fahad, S. Z. Ridoy, <span class="me">Jannat Sultana</span>, Z. F. Ria, Md H. Rahman, M. A. Uddin, Rashedur M. Rahman</p>
-        <p class="venue">SN Computer Science, 2025</p>
-        <p class="role">Role: Researcher</p>
-        <p class="pub-links">
-          <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mkQp4EMAAAAJ&citation_for_view=mkQp4EMAAAAJ:d1gkVwhDpl0C" target="_blank">paper</a><a href="papers/context-aware-cleaning.pdf" target="_blank">pdf</a><a href="https://github.com/Jannat-sultana/Context_Aware_Data_Cleaning" target="_blank">code</a>
+
+        <p class="title">
+          A Novel Approach to Label Generation in Text-Based Survey Data for Predictive
+Modeling of Job Satisfaction with Explainable and Generative AI
         </p>
+
+        <p class="authors">
+          <span class="me">Jannat Sultana</span>,
+          Rashedur M. Rahman
+
+        </p>
+
+        <p class="venue">
+          SN Computer Science, 2025
+        </p>
+
+        <p class="role">
+          Role: Lead Researcher
+        </p>
+
+        <p class="pub-links">
+
+          <a href="https://link.springer.com/article/10.1007/s42979-025-04445-9"
+             target="_blank">
+            paper
+          </a>
+
+          <a href="papers/js.pdf"
+             target="_blank">
+            pdf
+          </a>
+
+        </p>
+
         <details>
+
           <summary>Abstract</summary>
-          <p>Bengali NLP pipelines have generally reused text-cleaning recipes built for English, which strip out context that Bengali transformer models actually rely on. This study proposes a context-aware cleaning pipeline — correcting spelling, tagging HTML/URLs, and preserving punctuation and emojis instead of discarding them — and compares it against conventional cleaning across four Bengali benchmark datasets (BEmoC, SentNoB, UBMEC, EmoNoBa). The context-aware approach consistently improved transformer performance, raising accuracy by up to 4% on three of the four datasets, underscoring how much sentence-level context matters for Bengali text classification.</p>
+
+          <p>
+            Survey data often lacks explicit labeling, making it difficult to apply advanced machine learning techniques 
+            for predictive analysis. The study proposes an approach to systematically converting and binarizing survey data, 
+            addressing the lack of labeled data in text-based surveys. The survey dataset contains responses from 309 male fertility 
+            patients in Malaysia, collected over a one year period from November 2021 to October 2022. The survey data includes information 
+            on demographic, occupational stress, job satisfaction, and job performance. A comprehensive comparison is conducted between the 
+            traditional normalization method and the proposed method by utilizing eight machine learning and five large language models. 
+            Our proposed method demonstrates superior performance with an accuracy improvement of 9.68% for machine learning models and 
+            16.67% for large language models. The findings identify work-time balance, work-energy balance, and colleague support as key 
+            predictors of job satisfaction using Local interpretable Model-agnostic Explanations. Top two sentiment analyzers were employed 
+            together with three generative AI models to validate the superiority of the proposed method. The study’s implications extend to 
+            HR practices and organizational decision-making, providing targeted strategies for enhancing employee satisfaction and engagement.
+          </p>
+
         </details>
+
       </div>
+
     </div>
 
+    <!-- Publication 2 -->
+
     <div class="pub">
+
       <div class="thumb">
-        <!-- Add a system-diagram / figure image here, e.g. figures/pub3-diagram.png -->
-        <img src="figures/pub3-diagram.png" alt="Clinical text cleaning pipeline diagram" onerror="this.parentElement.innerHTML='IEEE IS<br>2024<br>★ Best Paper';">
+
+        <img src="Tagore_sys_diagram.png"
+             alt="Tagore pipeline diagram"
+             onerror="this.parentElement.innerHTML='SN Computer<br>Science<br>2025';">
+
       </div>
+
       <div class="meta">
-        <p class="title">An Efficient Text Cleaning Pipeline for Clinical Text for Transformer Encoder Models</p>
-        <p class="authors">S. Z. Ridoy, <span class="me">Jannat Sultana</span>, Z. F. Ria, M. A. Uddin, Md H. Rahman, Rashedur M. Rahman</p>
-        <p class="venue">2024 IEEE 12th International Conference on Intelligent Systems (IS)</p>
-        <p class="role">Role: Project Lead</p>
-        <p class="pub-links">
-          <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mkQp4EMAAAAJ&citation_for_view=mkQp4EMAAAAJ:u-x6o8ySG0sC" target="_blank">paper</a><a href="papers/clinical-text-cleaning.pdf" target="_blank">pdf</a>
+
+        <p class="title">
+          Deep Learning and BERT-Based Models for Poetry Analysis: A Study
+on Chronological and Subject-Wise Categorization of Tagore’s Poetic
+Works
         </p>
+
+        <p class="authors">
+
+          J. F. Ruma*, 
+          <span class="me">Jannat Sultana</span>,
+          S. Akter, 
+          J. J. Laboni,
+          Rashedur M. Rahman
+
+        </p>
+
+        <p class="venue">
+          SN Computer Science, 2025
+        </p>
+
+        <p class="role">
+          Role: Co-first Author 
+        </p>
+
+        <p class="pub-links">
+
+          <a href="https://link.springer.com/article/10.1007/s42979-025-04408-0"
+             target="_blank">
+            paper
+          </a>
+
+          <a href="papers/tagore.pdf"
+             target="_blank">
+            pdf
+          </a>
+
+        </p>
+
         <details>
+
           <summary>Abstract</summary>
-          <p>With so many text-preprocessing options available for transformer models, it isn't obvious which steps actually help — especially for clinical text, where accuracy stakes are high. This paper tests four common preprocessing techniques and their combinations on MIMIC-III and PubMed data across BERT-base, BioBERT, BioClinicalBERT, and RoBERTa, then proposes a new pipeline that removes repeated punctuation, normalizes text, and uses TF-IDF to filter unimportant words while preserving clinical terms. The proposed pipeline outperformed the baselines (90.16% accuracy on MIMIC-III, 64.20% on PubMed with BioBERT), while cutting training time by up to 17%.</p>
+
+          <p>
+            In the modern era, where artificial intelligence (AI) intersects with computational literary studies, the analysis of 
+            poetry presents both challenges and opportunities. Rabindranath Tagore’s poetry holds immense literary and historical significance, 
+            yet understanding its contextual motivations and systematically categorizing it remains complex. This study pioneers a chronological 
+            classification of Tagore’s poetry while also exploring subject-based categorization through advanced computational methods. Utilizing an 
+            AI-driven approach that integrates machine learning (ML), deep learning (DL), and natural language processing (NLP), we evaluated three ML 
+            models with two embedding methods, four DL models with four embedding methods, and five large language models (LLMs). Our methodology achieved 
+            85.99% accuracy in subject-based classification using LSTM and BiLSTM, while chronological classification with BanglaBERT reached 75.91% accuracy. 
+            This work establishes new benchmarks in Bengali poetry analysis, demonstrating that domain-specific adaptations consistently out-perform general-purpose 
+            LLMs. Moreover, the integration of Explainable AI with LIME enhances model interpretability, bridging computational techniques with literary critique. 
+            Our findings contribute significantly to computational literary studies, offering innovative methods for exploring culturally and linguistically rich 
+            poetic contexts.
+          </p>
+
         </details>
+
       </div>
+
     </div>
+    
+
+    <!-- Publication 3 -->
+
+    <div class="pub">
+
+      <div class="thumb">
+
+        <img src="plos.png"
+             alt="Contribution of various factors to stress level."
+             onerror="this.parentElement.innerHTML='PLOS One<br>2025';">
+
+      </div>
+
+      <div class="meta">
+
+        <p class="title">
+          Early detection of occupational stress: Enhancing workplace safety
+          with machine learning and large language models
+        </p>
+
+        <p class="authors">
+          M. J. Hasan,
+          <span class="me">Jannat Sultana</span>,
+          S. Ahmed,
+          Sifat Momen
+        </p>
+
+        <p class="venue">
+          PLOS One, 2025
+        </p>
+
+        <p class="role">
+          Role: Researcher
+        </p>
+
+        <p class="pub-links">
+
+          <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0323265"
+             target="_blank">
+            paper
+          </a>
+
+          <a href="papers/occupational-stress.pdf"
+             target="_blank">
+            pdf
+          </a>
+
+        </p>
+
+        <details>
+
+          <summary>Abstract</summary>
+
+          <p>
+            Occupational stress is a major concern for employers and organizations as it compromises decision-making and overall safety of workers. 
+            Studies indicate that work-stress contributes to severe mental strain, increased accident rates, and in extreme cases, even suicides. 
+            This study aims to enhance early detection of occupational stress through machine learning (ML) methods, providing stakeholders with better 
+            insights into the underlying causes of stress to improve occupational safety. Utilizing a newly published workplace survey dataset, 
+            we developed a novel feature selection pipeline identifying 39 key indicators of work-stress. An ensemble of three ML models achieved 
+            a state-of-the-art accuracy of 90.32%, surpassing existing studies. The framework’s generalizability was confirmed through a three-step 
+            validation technique: holdout-validation, 10-fold cross-validation, and external-validation with synthetic data generation, achieving an 
+            accuracy of 89% on unseen data. We also introduced a 1D-CNN to enable hierarchical and temporal learning from the data. Additionally,
+            we created an algorithm to convert tabular data into texts with 100% information retention, facilitating domain analysis with large 
+            language models, revealing that occupational stress is more closely related to the biomedical domain than clinical or generalist domains. 
+            Ablation studies reinforced our feature selection pipeline, and revealed sociodemographic features as the most important. 
+            Explainable AI techniques identified excessive workload and ambiguity (27%), poor communication (17%), and a positive work environment (16%) 
+            as key stress factors. Unlike previous studies relying on clinical settings or biomarkers, our approach streamlines stress detection from 
+            simple survey questions, offering a real-time, deployable tool for periodic stress assessment in workplaces.
+          </p>
+
+        </details>
+
+      </div>
+
+    </div>
+
+    <!-- Publication 4 -->
+
+    <div class="pub">
+
+      <div class="thumb">
+
+        <img src="figures/pub2-diagram.png"
+             alt="Context-aware data cleaning pipeline diagram"
+             onerror="this.parentElement.innerHTML='SN Computer<br>Science<br>2025';">
+
+      </div>
+
+      <div class="meta">
+
+        <p class="title">
+          Context-Aware Data Cleaning: Optimizing Bengali Text for Contextual
+          Text Classification
+        </p>
+
+        <p class="authors">
+
+          M. R. Faisal,
+          A. R. Fahad,
+          S. Z. Ridoy,
+          <span class="me">Jannat Sultana</span>,
+          Z. F. Ria,
+          Md H. Rahman,
+          M. A. Uddin,
+          Rashedur M. Rahman
+
+        </p>
+
+        <p class="venue">
+          SN Computer Science, 2025
+        </p>
+
+        <p class="role">
+          Role: Researcher
+        </p>
+
+        <p class="pub-links">
+
+          <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mkQp4EMAAAAJ&citation_for_view=mkQp4EMAAAAJ:d1gkVwhDpl0C"
+             target="_blank">
+            paper
+          </a>
+
+          <a href="papers/context-aware-cleaning.pdf"
+             target="_blank">
+            pdf
+          </a>
+
+          <a href="https://github.com/Jannat-sultana/Context_Aware_Data_Cleaning"
+             target="_blank">
+            code
+          </a>
+
+        </p>
+
+        <details>
+
+          <summary>Abstract</summary>
+
+          <p>
+            In Natural Language Processing (NLP), textual data is foundational, yet it presents substantial challenges, especially for under-resourced languages 
+            like Bengali. The complexity and volume of Bengali textual data require sophisticated data cleaning techniques. Traditional methods often neglect 
+            critical contextual information essential for effective textual analysis. This study highlights the need for context-aware data cleaning, a methodology 
+            that maintains linguistic context while removing noise. The study compares context-aware and traditional data cleaning approaches tailored for Bengali 
+            text to improve the performance of contextual transformer-based models. Conventional techniques in this study include symbol and punctuation removal, 
+            stop-word elimination, stemming, and removing HTML tags or URLs. In contrast, context-aware techniques involve spelling correction, tagging HTML and URLs, 
+            preserving punctuation and emojis, and selectively removing less important words using TF-IDF. The current initiative assesses the impact of these 
+            strategies through rigorous dataset curation and extensive training in machine learning, deep learning, and transformer-based models on four prominent 
+            Bengali datasets: BEmoC, SentNoB, UBMEC, and EmoNoBa. Results show context-aware data cleaning significantly outperforms traditional methods, particularly 
+            in enhancing transformer-based model performance. The developed context-aware data cleaning pipeline integrates various techniques, achieving a baseline 
+            accuracy improvement of up to 4% across three of the four datasets. These findings underscore the importance of preserving sentence-level context in Bengali 
+            for optimal NLP performance while minimizing noise. Additionally, the research introduces a novel context-aware data cleaning pipeline and provides detailed 
+            algorithms for its implementation, advancing NLP research and applications in Bengali and similar linguistic contexts.
+          </p>
+
+        </details>
+
+      </div>
+
+    </div>
+
+
+    <!-- Publication 5 -->
+
+    <div class="pub">
+
+      <div class="thumb">
+
+        <img src="figures/pub3-diagram.png"
+             alt="Clinical text cleaning pipeline diagram"
+             onerror="this.parentElement.innerHTML='IEEE IS<br>2024<br>★ Best Paper';">
+
+      </div>
+
+      <div class="meta">
+
+        <p class="title">
+          An Efficient Text Cleaning Pipeline for Clinical Text for
+          Transformer Encoder Models
+        </p>
+
+        <p class="authors">
+
+          S. Z. Ridoy,
+          <span class="me">Jannat Sultana</span>,
+          Z. F. Ria,
+          M. A. Uddin,
+          Md. H. Rahman,
+          Rashedur M. Rahman
+
+        </p>
+
+        <p class="venue">
+          2024 IEEE 12th International Conference on Intelligent Systems (IS)
+        </p>
+
+        <p class="role">
+          Role: Project Lead
+        </p>
+
+        <p class="pub-links">
+
+          <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mkQp4EMAAAAJ&citation_for_view=mkQp4EMAAAAJ:u-x6o8ySG0sC"
+             target="_blank">
+            paper
+          </a>
+
+          <a href="papers/clinical-text-cleaning.pdf"
+             target="_blank">
+            pdf
+          </a>
+
+        </p>
+
+        <details>
+
+          <summary>Abstract</summary>
+
+          <p>
+           It might be challenging to choose the best text preprocessing strategy in the field of natural language processing (NLP) 
+            due to the variety of techniques available. Given the popularity of transformer models, we wondered if preprocessing was necessary and, 
+            if so, what methods would improve the models' performance. Especially when working with clinical text data, accuracy is crucial. Our goal 
+            was to find an appropriate pre-processing pipeline for clinical texts that maintains or improves model performance. We experienced four 
+            common preprocessing techniques and their groupings on two datasets from MIMIC-3 and PubMed. We used four models: BERT base, BioBERT, 
+            BioClinicalBERT, and RoBERTa. The varied accuracy results from existing techniques inspired us to develop a new pipeline to improve accuracy. 
+            Our pipeline starts with removing repeated punctuation, normalizing the text with a CleanText function, and filtering less important words using 
+            TF-IDF scores to keep clinically applicable terms and moderate noise. Our results presented that our pipeline outperformed the base models. 
+            For the MIMIC-3 dataset, the BERT base model achieved 90.16% accuracy, and for the PubMed dataset, BioBERT achieved 64.20% accuracy. 
+            We also found that removing stop words decreased accuracy, while using TF-IDF either maintained or improved it up to 3%. Additionally, 
+            as we removed less important words from the documents our pipeline considerably reduced training time up to 17%.
+          </p>
+
+        </details>
+
+      </div>
+
+    </div>
+
   </section>
+
+
+  <!-- =========================
+       EDUCATION
+       ========================= -->
+
+  <section id="education">
+
+    <h2>Education</h2>
+
+    <div class="education-entry">
+
+      <p class="title">
+        B.S. in Computer Science and Engineering
+      </p>
+
+      <p class="sub">
+        North South University, Dhaka, Bangladesh
+      </p>
+
+      <p>
+        Undergraduate research and teaching experience in computer science,
+        with research interests spanning machine learning, natural language
+        processing, and healthcare AI.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       SELECTED PROJECTS
+       ========================= -->
 
   <section id="projects">
-    <h2>Selected Projects</h2>
+
+    <h2>Selected Research &amp; Projects</h2>
+
 
     <div class="entry">
-      <p class="title">Hand Gesture Virtual Keyboard</p>
-      <p>A computer vision-based virtual keyboard that allows users to type without physical contact using hand gestures captured through a webcam.</p>
-      <p class="entry-links"><a href="https://github.com/Jannat-sultana/hand-gesture-virtual-keyboard" target="_blank">code &amp; demo</a></p>
+
+      <p class="title">
+        Hand Gesture Virtual Keyboard
+      </p>
+
+      <p>
+        A computer vision-based virtual keyboard that allows users to type
+        without physical contact using hand gestures captured through a
+        webcam.
+      </p>
+
+      <p class="entry-links">
+
+        <a href="https://github.com/Jannat-sultana/hand-gesture-virtual-keyboard"
+           target="_blank">
+          code &amp; demo
+        </a>
+
+      </p>
+
     </div>
 
+
     <div class="entry">
-      <p class="title">Air Quality Analysis in Dhaka</p>
-      <p>Analysis of PM2.5 air quality data for Dhaka, focusing on trends, preprocessing, and preparing hourly measurements — AQI, NowCast Concentration, AQI Category — for machine learning models.</p>
-      <p class="entry-links"><a href="https://github.com/Jannat-sultana/Air-Quality-Index-Prediction" target="_blank">code</a></p>
+
+      <p class="title">
+        Air Quality Analysis in Dhaka
+      </p>
+
+      <p>
+        Analysis of PM2.5 air quality data for Dhaka, focusing on trends,
+        preprocessing, and preparing hourly measurements — AQI, NowCast
+        Concentration, and AQI Category - for machine learning models.
+      </p>
+
+      <p class="entry-links">
+
+        <a href="https://github.com/Jannat-sultana/Air-Quality-Index-Prediction"
+           target="_blank">
+          code
+        </a>
+
+      </p>
+
     </div>
+
   </section>
+
+
+  <!-- =========================
+       AWARDS
+       ========================= -->
 
   <section id="awards">
+
     <h2>Awards</h2>
 
-    <div class="entry">
-      <p class="title">Best Paper Award</p>
-      <p class="sub">12th International IEEE Conference on Intelligent Systems, 2024</p>
-      <p>For developing an efficient text cleaning pipeline for clinical texts for transformer encoder models.</p>
-      <p class="entry-links"><a href="https://github.com/Jannat-sultana/JannatSultana.github.io/blob/main/Award_best_paper.pdf" target="_blank">certificate</a></p>
-    </div>
 
     <div class="entry">
-      <p class="title">People's Choice Award</p>
-      <p class="sub">3 Minute Thesis (3MT) Bangladesh 2025</p>
-      <p>By Elite Research Lab LLC</p>
-      <p class="entry-links"><a href="https://github.com/Jannat-sultana/JannatSultana.github.io/blob/main/Award_best_paper.pdf" target="_blank">certificate</a></p>
+
+      <p class="title">
+        Best Paper Award
+      </p>
+
+      <p class="sub">
+        12th International IEEE Conference on Intelligent Systems, 2024
+      </p>
+
+      <p>
+        For developing an efficient text cleaning pipeline for clinical
+        texts for transformer encoder models.
+      </p>
+
+      <p class="entry-links">
+
+        <a href="Award_best_paper.pdf"
+           target="_blank">
+          certificate
+        </a>
+
+      </p>
+
     </div>
 
+
     <div class="entry">
-      <p class="title">Magna Cum Laude</p>
-      <p class="sub">North South University, Dhaka, Bangladesh — CGPA-based award</p>
-      <p class="entry-links"><a href="https://www.scribd.com/document/528095287/NSU-Grading-Policy" target="_blank">grading policy</a></p>
+
+      <p class="title">
+        People's Choice Award
+      </p>
+
+      <p class="sub">
+        3 Minute Thesis (3MT) Bangladesh 2025
+      </p>
+
+      <p>
+        By Elite Research Lab LLC
+      </p>
+
+      <p class="entry-links">
+
+        <!-- IMPORTANT:
+             Replace this filename with the actual People's Choice
+             Award certificate filename if it is different. -->
+
+        <a href="Certificate of Achievement.pdf"
+           target="_blank">
+          certificate
+        </a>
+
+      </p>
+
     </div>
+
+
+    <div class="entry">
+
+      <p class="title">
+        Magna Cum Laude
+      </p>
+
+      <p class="sub">
+        North South University, Dhaka, Bangladesh - CGPA-based award
+      </p>
+
+      <p class="entry-links">
+
+        <a href="https://www.scribd.com/document/528095287/NSU-Grading-Policy"
+           target="_blank">
+          grading policy
+        </a>
+
+      </p>
+
+    </div>
+
   </section>
 
-  <section id="teaching">
-    <h2>Teaching</h2>
 
-    <div class="row">
-      <div class="left">
-        <p class="title">Database Systems Lab</p>
-        <p class="sub">North South University</p>
-      </div>
-      <div class="date">Jun 2025 – Present</div>
-    </div>
-    <div class="row">
-      <div class="left">
-        <p class="title">Digital Logic Design Lab</p>
-        <p class="sub">North South University</p>
-      </div>
-      <div class="date">Jun 2025 – Present</div>
-    </div>
-    <div class="row">
-      <div class="left">
-        <p class="title">Computer Organization and Architecture Lab</p>
-        <p class="sub">North South University</p>
-      </div>
-      <div class="date">Jun 2025 – Present</div>
-    </div>
-    <div class="row">
-      <div class="left">
-        <p class="title">Machine Learning</p>
-        <p class="sub">North South University</p>
-      </div>
-      <div class="date">Feb 2025 – Jun 2025</div>
-    </div>
-    <div class="row">
-      <div class="left">
-        <p class="title">Microprocessor Interfacing &amp; Embedded System</p>
-        <p class="sub">North South University</p>
-      </div>
-      <div class="date">Feb 2023 – Dec 2024</div>
-    </div>
-    <div class="row">
-      <div class="left">
-        <p class="title">Computer Organization and Architecture</p>
-        <p class="sub">North South University</p>
-      </div>
-      <div class="date">Feb 2023 – Dec 2024</div>
-    </div>
-  </section>
+  <!-- =========================
+       RESEARCH EXPERIENCE
+       ========================= -->
 
   <section id="experience">
-    <h2>Experience</h2>
+
+    <h2>Research Experience</h2>
+
 
     <div class="row">
+
       <div class="left">
-        <p class="title">Research Assistant</p>
-        <p class="sub">ELITE Research Lab</p>
-        <p class="courses">Research planning &amp; methodology, paper writing, mentoring junior researchers</p>
+
+        <p class="title">
+          Research Assistant
+        </p>
+
+        <p class="sub">
+          ELITE Research Lab
+        </p>
+
+        <p class="courses">
+          Research planning &amp; methodology, paper writing, mentoring
+          junior researchers
+        </p>
+
       </div>
-      <div class="date">Jan 2026 – Present</div>
+
+      <div class="date">
+        Jan 2026 – Present
+      </div>
+
     </div>
+
+
     <div class="row">
+
       <div class="left">
-        <p class="title">Lab Instructor</p>
-        <p class="sub">North South University, Dhaka, Bangladesh</p>
-        <p class="courses">Programming Language I Lab &middot; Microprocessor Interfacing and Embedded Systems Lab &middot; Database Systems Lab</p>
+
+        <p class="title">
+          Lab Instructor
+        </p>
+
+        <p class="sub">
+          North South University, Dhaka, Bangladesh
+        </p>
+
+        <p class="courses">
+          Programming Language I Lab &middot;
+          Microprocessor Interfacing and Embedded Systems Lab &middot;
+          Database Systems Lab
+        </p>
+
       </div>
-      <div class="date">Jun 2025 – Present</div>
+
+      <div class="date">
+        Jun 2025 – Present
+      </div>
+
     </div>
+
+
     <div class="row">
+
       <div class="left">
-        <p class="title">Graduate Teaching Assistant</p>
-        <p class="sub">North South University, Dhaka, Bangladesh</p>
-        <p class="courses">Course: Machine Learning</p>
+
+        <p class="title">
+          Graduate Teaching Assistant
+        </p>
+
+        <p class="sub">
+          North South University, Dhaka, Bangladesh
+        </p>
+
+        <p class="courses">
+          Course: Machine Learning
+        </p>
+
       </div>
-      <div class="date">Feb 2025 – May 2025</div>
+
+      <div class="date">
+        Feb 2025 – May 2025
+      </div>
+
     </div>
+
+
     <div class="row">
+
       <div class="left">
-        <p class="title">Undergraduate Teaching Assistant</p>
-        <p class="sub">North South University, Dhaka, Bangladesh</p>
-        <p class="courses">Microprocessor Interfacing &amp; Embedded System · Computer Organization and Architecture</p>
+
+        <p class="title">
+          Undergraduate Teaching Assistant
+        </p>
+
+        <p class="sub">
+          North South University, Dhaka, Bangladesh
+        </p>
+
+        <p class="courses">
+          Microprocessor Interfacing &amp; Embedded System
+          &middot;
+          Computer Organization and Architecture
+        </p>
+
       </div>
-      <div class="date">Feb 2023 – Dec 2024</div>
+
+      <div class="date">
+        Feb 2023 – Dec 2024
+      </div>
+
     </div>
+
   </section>
 
+
+  <!-- =========================
+       TEACHING
+       ========================= -->
+
+  <section id="teaching">
+
+    <h2>Teaching</h2>
+
+
+    <div class="row">
+
+      <div class="left">
+
+        <p class="title">
+          Database Systems Lab
+        </p>
+
+        <p class="sub">
+          North South University
+        </p>
+
+      </div>
+
+      <div class="date">
+        Jun 2025 – Present
+      </div>
+
+    </div>
+
+
+    <div class="row">
+
+      <div class="left">
+
+        <p class="title">
+          Digital Logic Design Lab
+        </p>
+
+        <p class="sub">
+          North South University
+        </p>
+
+      </div>
+
+      <div class="date">
+        Jun 2025 – Present
+      </div>
+
+    </div>
+
+
+    <div class="row">
+
+      <div class="left">
+
+        <p class="title">
+          Computer Organization and Architecture Lab
+        </p>
+
+        <p class="sub">
+          North South University
+        </p>
+
+      </div>
+
+      <div class="date">
+        Jun 2025 – Present
+      </div>
+
+    </div>
+
+
+    <div class="row">
+
+      <div class="left">
+
+        <p class="title">
+          Machine Learning
+        </p>
+
+        <p class="sub">
+          North South University
+        </p>
+
+      </div>
+
+      <div class="date">
+        Feb 2025 – Jun 2025
+      </div>
+
+    </div>
+
+
+    <div class="row">
+
+      <div class="left">
+
+        <p class="title">
+          Microprocessor Interfacing &amp; Embedded System
+        </p>
+
+        <p class="sub">
+          North South University
+        </p>
+
+      </div>
+
+      <div class="date">
+        Feb 2023 – Dec 2024
+      </div>
+
+    </div>
+
+
+    <div class="row">
+
+      <div class="left">
+
+        <p class="title">
+          Computer Organization and Architecture
+        </p>
+
+        <p class="sub">
+          North South University
+        </p>
+
+      </div>
+
+      <div class="date">
+        Feb 2023 – Dec 2024
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
+
   <footer>
+
     &copy; Jannat Sultana. Last updated September 2026.
+
   </footer>
 
+
 </div>
+
 </body>
 </html>
