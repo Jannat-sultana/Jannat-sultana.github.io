@@ -367,6 +367,48 @@
       line-height: 1.55;
     }
 
+    .pub-links {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.pub-links a {
+  margin-right: 0 !important;
+  font-size: 14.5px;
+}
+
+.abstract-inline {
+  font-size: 14.5px;
+}
+
+.abstract-inline summary {
+  cursor: pointer;
+  color: var(--link);
+  list-style: none;
+}
+
+.abstract-inline summary::-webkit-details-marker {
+  display: none;
+}
+
+.abstract-inline summary::before {
+  content: "▸ ";
+}
+
+.abstract-inline[open] summary::before {
+  content: "▾ ";
+}
+
+.abstract-inline p {
+  margin: 8px 0 0;
+  color: var(--text);
+  font-size: 14.5px;
+  line-height: 1.55;
+  max-width: 600px;
+}
+
     /* =========================
        EDUCATION
        ========================= */
@@ -789,149 +831,148 @@
 
 
   <!-- =========================
-       PUBLICATIONS
-       ========================= -->
+     PUBLICATIONS
+     ========================= -->
 
-  <section id="publications">
+<section id="publications">
 
-    <h2>Publications</h2>
+  <h2>Publications</h2>
 
 
-<!-- Publication 1 -->
+  <!-- Publication 1 -->
 
-    <div class="pub">
+  <div class="pub">
 
-      <div class="thumb">
+    <div class="thumb">
 
-        <img src="js.jpg"
-             alt="job satisfaction pipeline diagram"
-             onerror="this.parentElement.innerHTML='SN Computer<br>Science<br>2025';">
+      <img src="js.jpg"
+           alt="job satisfaction pipeline diagram"
+           onerror="this.parentElement.innerHTML='SN Computer<br>Science<br>2025';">
 
-      </div>
+    </div>
 
-      <div class="meta">
+    <div class="meta">
 
-        <p class="title">
-          A Novel Approach to Label Generation in Text-Based Survey Data for Predictive
-Modeling of Job Satisfaction with Explainable and Generative AI
-        </p>
+      <p class="title">
+        A Novel Approach to Label Generation in Text-Based Survey Data for Predictive
+        Modeling of Job Satisfaction with Explainable and Generative AI
+      </p>
 
-        <p class="authors">
-          <span class="me">Jannat Sultana</span>,
-          Rashedur M. Rahman
+      <p class="authors">
+        <span class="me">Jannat Sultana</span>,
+        Rashedur M. Rahman
+      </p>
 
-        </p>
+      <p class="venue">
+        SN Computer Science, 2025
+      </p>
 
-        <p class="venue">
-          SN Computer Science, 2025
-        </p>
+      <p class="role">
+        Role: Lead Researcher
+      </p>
 
-        <p class="role">
-          Role: Lead Researcher
-        </p>
+      <div class="pub-links">
 
-        <p class="pub-links">
+        <a href="https://link.springer.com/article/10.1007/s42979-025-04445-9"
+           target="_blank">
+          paper
+        </a>
 
-          <a href="https://link.springer.com/article/10.1007/s42979-025-04445-9"
-             target="_blank">
-            paper
-          </a>
-
-          <a href="papers/js.pdf"
-             target="_blank">
-            pdf
-          </a>
+        <a href="papers/js.pdf"
+           target="_blank">
+          pdf
+        </a>
 
         <details class="abstract-inline">
-          
-          <p>
+
           <summary>Abstract</summary>
-            Survey data often lacks explicit labeling, making it difficult to apply advanced machine learning techniques 
-            for predictive analysis. The study proposes an approach to systematically converting and binarizing survey data, 
-            addressing the lack of labeled data in text-based surveys. The survey dataset contains responses from 309 male fertility 
-            patients in Malaysia, collected over a one year period from November 2021 to October 2022. The survey data includes information 
-            on demographic, occupational stress, job satisfaction, and job performance. A comprehensive comparison is conducted between the 
-            traditional normalization method and the proposed method by utilizing eight machine learning and five large language models. 
-            Our proposed method demonstrates superior performance with an accuracy improvement of 9.68% for machine learning models and 
-            16.67% for large language models. The findings identify work-time balance, work-energy balance, and colleague support as key 
-            predictors of job satisfaction using Local interpretable Model-agnostic Explanations. Top two sentiment analyzers were employed 
-            together with three generative AI models to validate the superiority of the proposed method. The study’s implications extend to 
+
+          <p>
+            Survey data often lacks explicit labeling, making it difficult to apply advanced machine learning techniques
+            for predictive analysis. The study proposes an approach to systematically converting and binarizing survey data,
+            addressing the lack of labeled data in text-based surveys. The survey dataset contains responses from 309 male fertility
+            patients in Malaysia, collected over a one year period from November 2021 to October 2022. The survey data includes information
+            on demographic, occupational stress, job satisfaction, and job performance. A comprehensive comparison is conducted between the
+            traditional normalization method and the proposed method by utilizing eight machine learning and five large language models.
+            Our proposed method demonstrates superior performance with an accuracy improvement of 9.68% for machine learning models and
+            16.67% for large language models. The findings identify work-time balance, work-energy balance, and colleague support as key
+            predictors of job satisfaction using Local interpretable Model-agnostic Explanations. Top two sentiment analyzers were employed
+            together with three generative AI models to validate the superiority of the proposed method. The study’s implications extend to
             HR practices and organizational decision-making, providing targeted strategies for enhancing employee satisfaction and engagement.
           </p>
 
         </details>
-      </p>
+
       </div>
 
     </div>
 
-    <!-- Publication 2 -->
+  </div>
 
-    <div class="pub">
 
-      <div class="thumb">
+  <!-- Publication 2 -->
 
-        <img src="Tagore_sys_diagram.png"
-             alt="Tagore pipeline diagram"
-             onerror="this.parentElement.innerHTML='SN Computer<br>Science<br>2025';">
+  <div class="pub">
 
-      </div>
+    <div class="thumb">
 
-      <div class="meta">
+      <img src="Tagore_sys_diagram.png"
+           alt="Tagore pipeline diagram"
+           onerror="this.parentElement.innerHTML='SN Computer<br>Science<br>2025';">
 
-        <p class="title">
-          Deep Learning and BERT-Based Models for Poetry Analysis: A Study
-on Chronological and Subject-Wise Categorization of Tagore’s Poetic
-Works
-        </p>
+    </div>
 
-        <p class="authors">
+    <div class="meta">
 
-          J. F. Ruma*, 
-          <span class="me">Jannat Sultana</span>,
-          S. Akter, 
-          J. J. Laboni,
-          Rashedur M. Rahman
+      <p class="title">
+        Deep Learning and BERT-Based Models for Poetry Analysis: A Study
+        on Chronological and Subject-Wise Categorization of Tagore’s Poetic
+        Works
+      </p>
 
-        </p>
+      <p class="authors">
+        J. F. Ruma*,
+        <span class="me">Jannat Sultana</span>,
+        S. Akter,
+        J. J. Laboni,
+        Rashedur M. Rahman
+      </p>
 
-        <p class="venue">
-          SN Computer Science, 2025
-        </p>
+      <p class="venue">
+        SN Computer Science, 2025
+      </p>
 
-        <p class="role">
-          Role: Co-first Author 
-        </p>
+      <p class="role">
+        Role: Co-first Author
+      </p>
 
-        <p class="pub-links">
+      <div class="pub-links">
 
-          <a href="https://link.springer.com/article/10.1007/s42979-025-04408-0"
-             target="_blank">
-            paper
-          </a>
+        <a href="https://link.springer.com/article/10.1007/s42979-025-04408-0"
+           target="_blank">
+          paper
+        </a>
 
-          <a href="papers/tagore.pdf"
-             target="_blank">
-            pdf
-          </a>
+        <a href="papers/tagore.pdf"
+           target="_blank">
+          pdf
+        </a>
 
-        </p>
-
-        <details>
+        <details class="abstract-inline">
 
           <summary>Abstract</summary>
 
           <p>
-            In the modern era, where artificial intelligence (AI) intersects with computational literary studies, the analysis of 
-            poetry presents both challenges and opportunities. Rabindranath Tagore’s poetry holds immense literary and historical significance, 
-            yet understanding its contextual motivations and systematically categorizing it remains complex. This study pioneers a chronological 
-            classification of Tagore’s poetry while also exploring subject-based categorization through advanced computational methods. Utilizing an 
-            AI-driven approach that integrates machine learning (ML), deep learning (DL), and natural language processing (NLP), we evaluated three ML 
-            models with two embedding methods, four DL models with four embedding methods, and five large language models (LLMs). Our methodology achieved 
-            85.99% accuracy in subject-based classification using LSTM and BiLSTM, while chronological classification with BanglaBERT reached 75.91% accuracy. 
-            This work establishes new benchmarks in Bengali poetry analysis, demonstrating that domain-specific adaptations consistently out-perform general-purpose 
-            LLMs. Moreover, the integration of Explainable AI with LIME enhances model interpretability, bridging computational techniques with literary critique. 
-            Our findings contribute significantly to computational literary studies, offering innovative methods for exploring culturally and linguistically rich 
+            In the modern era, where artificial intelligence (AI) intersects with computational literary studies, the analysis of
+            poetry presents both challenges and opportunities. Rabindranath Tagore’s poetry holds immense literary and historical significance,
+            yet understanding its contextual motivations and systematically categorizing it remains complex. This study pioneers a chronological
+            classification of Tagore’s poetry while also exploring subject-based categorization through advanced computational methods. Utilizing an
+            AI-driven approach that integrates machine learning (ML), deep learning (DL), and natural language processing (NLP), we evaluated three ML
+            models with two embedding methods, four DL models with four embedding methods, and five large language models (LLMs). Our methodology achieved
+            85.99% accuracy in subject-based classification using LSTM and BiLSTM, while chronological classification with BanglaBERT reached 75.91% accuracy.
+            This work establishes new benchmarks in Bengali poetry analysis, demonstrating that domain-specific adaptations consistently out-perform general-purpose
+            LLMs. Moreover, the integration of Explainable AI with LIME enhances model interpretability, bridging computational techniques with literary critique.
+            Our findings contribute significantly to computational literary studies, offering innovative methods for exploring culturally and linguistically rich
             poetic contexts.
           </p>
 
@@ -940,75 +981,75 @@ Works
       </div>
 
     </div>
-    
 
-    <!-- Publication 3 -->
+  </div>
 
-    <div class="pub">
 
-      <div class="thumb">
+  <!-- Publication 3 -->
 
-        <img src="plos.png"
-             alt="Contribution of various factors to stress level."
-             onerror="this.parentElement.innerHTML='PLOS One<br>2025';">
+  <div class="pub">
 
-      </div>
+    <div class="thumb">
 
-      <div class="meta">
+      <img src="plos.png"
+           alt="Contribution of various factors to stress level."
+           onerror="this.parentElement.innerHTML='PLOS One<br>2025';">
 
-        <p class="title">
-          Early detection of occupational stress: Enhancing workplace safety
-          with machine learning and large language models
-        </p>
+    </div>
 
-        <p class="authors">
-          M. J. Hasan,
-          <span class="me">Jannat Sultana</span>,
-          S. Ahmed,
-          Sifat Momen
-        </p>
+    <div class="meta">
 
-        <p class="venue">
-          PLOS One, 2025
-        </p>
+      <p class="title">
+        Early detection of occupational stress: Enhancing workplace safety
+        with machine learning and large language models
+      </p>
 
-        <p class="role">
-          Role: Researcher
-        </p>
+      <p class="authors">
+        M. J. Hasan,
+        <span class="me">Jannat Sultana</span>,
+        S. Ahmed,
+        Sifat Momen
+      </p>
 
-        <p class="pub-links">
+      <p class="venue">
+        PLOS One, 2025
+      </p>
 
-          <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0323265"
-             target="_blank">
-            paper
-          </a>
+      <p class="role">
+        Role: Researcher
+      </p>
 
-          <a href="papers/occupational-stress.pdf"
-             target="_blank">
-            pdf
-          </a>
+      <div class="pub-links">
 
-        </p>
+        <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0323265"
+           target="_blank">
+          paper
+        </a>
 
-        <details>
+        <a href="papers/occupational-stress.pdf"
+           target="_blank">
+          pdf
+        </a>
+
+        <details class="abstract-inline">
 
           <summary>Abstract</summary>
 
           <p>
-            Occupational stress is a major concern for employers and organizations as it compromises decision-making and overall safety of workers. 
-            Studies indicate that work-stress contributes to severe mental strain, increased accident rates, and in extreme cases, even suicides. 
-            This study aims to enhance early detection of occupational stress through machine learning (ML) methods, providing stakeholders with better 
-            insights into the underlying causes of stress to improve occupational safety. Utilizing a newly published workplace survey dataset, 
-            we developed a novel feature selection pipeline identifying 39 key indicators of work-stress. An ensemble of three ML models achieved 
-            a state-of-the-art accuracy of 90.32%, surpassing existing studies. The framework’s generalizability was confirmed through a three-step 
-            validation technique: holdout-validation, 10-fold cross-validation, and external-validation with synthetic data generation, achieving an 
+            Occupational stress is a major concern for employers and organizations as it compromises decision-making and overall safety of workers.
+            Studies indicate that work-stress contributes to severe mental strain, increased accident rates, and in extreme cases, even suicides.
+            This study aims to enhance early detection of occupational stress through machine learning (ML) methods, providing stakeholders with better
+            insights into the underlying causes of stress to improve occupational safety. Utilizing a newly published workplace survey dataset,
+            we developed a novel feature selection pipeline identifying 39 key indicators of work-stress. An ensemble of three ML models achieved
+            a state-of-the-art accuracy of 90.32%, surpassing existing studies. The framework’s generalizability was confirmed through a three-step
+            validation technique: holdout-validation, 10-fold cross-validation, and external-validation with synthetic data generation, achieving an
             accuracy of 89% on unseen data. We also introduced a 1D-CNN to enable hierarchical and temporal learning from the data. Additionally,
-            we created an algorithm to convert tabular data into texts with 100% information retention, facilitating domain analysis with large 
-            language models, revealing that occupational stress is more closely related to the biomedical domain than clinical or generalist domains. 
-            Ablation studies reinforced our feature selection pipeline, and revealed sociodemographic features as the most important. 
-            Explainable AI techniques identified excessive workload and ambiguity (27%), poor communication (17%), and a positive work environment (16%) 
-            as key stress factors. Unlike previous studies relying on clinical settings or biomarkers, our approach streamlines stress detection from 
-            simple survey questions, offering a real-time, deployable tool for periodic stress assessment in workplaces.
+            we created an algorithm to convert tabular data into texts with 100% information retention, facilitating domain analysis with large
+            language models, revealing that occupational stress is more closely related to the biomedical domain than clinical or generalist domains.
+            Ablation studies reinforced our feature selection pipeline, and revealed sociodemographic features as the most important. Explainable AI
+            techniques identified excessive workload and ambiguity (27%), poor communication (17%), and a positive work environment (16%) as key stress
+            factors. Unlike previous studies relying on clinical settings or biomarkers, our approach streamlines stress detection from simple survey
+            questions, offering a real-time, deployable tool for periodic stress assessment in workplaces.
           </p>
 
         </details>
@@ -1017,82 +1058,81 @@ Works
 
     </div>
 
-    <!-- Publication 4 -->
+  </div>
 
-    <div class="pub">
 
-      <div class="thumb">
+  <!-- Publication 4 -->
 
-        <img src="bangla_clean.jpg"
-             alt="Context-aware data cleaning pipeline diagram"
-             onerror="this.parentElement.innerHTML='SN Computer<br>Science<br>2025';">
+  <div class="pub">
 
-      </div>
+    <div class="thumb">
 
-      <div class="meta">
+      <img src="bangla_clean.jpg"
+           alt="Context-aware data cleaning pipeline diagram"
+           onerror="this.parentElement.innerHTML='SN Computer<br>Science<br>2025';">
 
-        <p class="title">
-          Context-Aware Data Cleaning: Optimizing Bengali Text for Contextual
-          Text Classification
-        </p>
+    </div>
 
-        <p class="authors">
+    <div class="meta">
 
-          M. R. Faisal,
-          A. R. Fahad,
-          S. Z. Ridoy,
-          <span class="me">Jannat Sultana</span>,
-          Z. F. Ria,
-          Md H. Rahman,
-          M. A. Uddin,
-          Rashedur M. Rahman
+      <p class="title">
+        Context-Aware Data Cleaning: Optimizing Bengali Text for Contextual
+        Text Classification
+      </p>
 
-        </p>
+      <p class="authors">
+        M. R. Faisal,
+        A. R. Fahad,
+        S. Z. Ridoy,
+        <span class="me">Jannat Sultana</span>,
+        Z. F. Ria,
+        Md H. Rahman,
+        M. A. Uddin,
+        Rashedur M. Rahman
+      </p>
 
-        <p class="venue">
-          SN Computer Science, 2025
-        </p>
+      <p class="venue">
+        SN Computer Science, 2025
+      </p>
 
-        <p class="role">
-          Role: Researcher
-        </p>
+      <p class="role">
+        Role: Researcher
+      </p>
 
-        <p class="pub-links">
+      <div class="pub-links">
 
-          <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mkQp4EMAAAAJ&citation_for_view=mkQp4EMAAAAJ:d1gkVwhDpl0C"
-             target="_blank">
-            paper
-          </a>
+        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mkQp4EMAAAAJ&citation_for_view=mkQp4EMAAAAJ:d1gkVwhDpl0C"
+           target="_blank">
+          paper
+        </a>
 
-          <a href="papers/context-aware-cleaning.pdf"
-             target="_blank">
-            pdf
-          </a>
+        <a href="papers/context-aware-cleaning.pdf"
+           target="_blank">
+          pdf
+        </a>
 
-          <a href="https://github.com/Jannat-sultana/Context_Aware_Data_Cleaning"
-             target="_blank">
-            code
-          </a>
+        <a href="https://github.com/Jannat-sultana/Context_Aware_Data_Cleaning"
+           target="_blank">
+          code
+        </a>
 
-        </p>
-
-        <details>
+        <details class="abstract-inline">
 
           <summary>Abstract</summary>
 
           <p>
-            In Natural Language Processing (NLP), textual data is foundational, yet it presents substantial challenges, especially for under-resourced languages 
-            like Bengali. The complexity and volume of Bengali textual data require sophisticated data cleaning techniques. Traditional methods often neglect 
-            critical contextual information essential for effective textual analysis. This study highlights the need for context-aware data cleaning, a methodology 
-            that maintains linguistic context while removing noise. The study compares context-aware and traditional data cleaning approaches tailored for Bengali 
-            text to improve the performance of contextual transformer-based models. Conventional techniques in this study include symbol and punctuation removal, 
-            stop-word elimination, stemming, and removing HTML tags or URLs. In contrast, context-aware techniques involve spelling correction, tagging HTML and URLs, 
-            preserving punctuation and emojis, and selectively removing less important words using TF-IDF. The current initiative assesses the impact of these 
-            strategies through rigorous dataset curation and extensive training in machine learning, deep learning, and transformer-based models on four prominent 
-            Bengali datasets: BEmoC, SentNoB, UBMEC, and EmoNoBa. Results show context-aware data cleaning significantly outperforms traditional methods, particularly 
-            in enhancing transformer-based model performance. The developed context-aware data cleaning pipeline integrates various techniques, achieving a baseline 
-            accuracy improvement of up to 4% across three of the four datasets. These findings underscore the importance of preserving sentence-level context in Bengali 
-            for optimal NLP performance while minimizing noise. Additionally, the research introduces a novel context-aware data cleaning pipeline and provides detailed 
+            In Natural Language Processing (NLP), textual data is foundational, yet it presents substantial challenges, especially for under-resourced languages
+            like Bengali. The complexity and volume of Bengali textual data require sophisticated data cleaning techniques. Traditional methods often neglect
+            critical contextual information essential for effective textual analysis. This study highlights the need for context-aware data cleaning, a methodology
+            that maintains linguistic context while removing noise. The study compares context-aware and traditional data cleaning approaches tailored for Bengali
+            text to improve the performance of contextual transformer-based models. Conventional techniques in this study include symbol and punctuation removal,
+            stop-word elimination, stemming, and removing HTML tags or URLs. In contrast, context-aware techniques involve spelling correction, tagging HTML and URLs,
+            preserving punctuation and emojis, and selectively removing less important words using TF-IDF. The current initiative assesses the impact of these
+            strategies through rigorous dataset curation and extensive training in machine learning, deep learning, and transformer-based models on four prominent
+            Bengali datasets: BEmoC, SentNoB, UBMEC, and EmoNoBa. Results show context-aware data cleaning significantly outperforms traditional methods, particularly
+            in enhancing transformer-based model performance. The developed context-aware data cleaning pipeline integrates various techniques, achieving a baseline
+            accuracy improvement of up to 4% across three of the four datasets. These findings underscore the importance of preserving sentence-level context in Bengali
+            for optimal NLP performance while minimizing noise. Additionally, the research introduces a novel context-aware data cleaning pipeline and provides detailed
             algorithms for its implementation, advancing NLP research and applications in Bengali and similar linguistic contexts.
           </p>
 
@@ -1102,74 +1142,72 @@ Works
 
     </div>
 
+  </div>
 
-    <!-- Publication 5 -->
 
-    <div class="pub">
+  <!-- Publication 5 -->
 
-      <div class="thumb">
+  <div class="pub">
 
-        <img src="med_clean.jpg"
-             alt="Clinical text cleaning pipeline diagram"
-             onerror="this.parentElement.innerHTML='IEEE IS<br>2024<br>★ Best Paper';">
+    <div class="thumb">
 
-      </div>
+      <img src="med_clean.jpg"
+           alt="Clinical text cleaning pipeline diagram"
+           onerror="this.parentElement.innerHTML='IEEE IS<br>2024<br>★ Best Paper';">
 
-      <div class="meta">
+    </div>
 
-        <p class="title">
-          An Efficient Text Cleaning Pipeline for Clinical Text for
-          Transformer Encoder Models
-        </p>
+    <div class="meta">
 
-        <p class="authors">
+      <p class="title">
+        An Efficient Text Cleaning Pipeline for Clinical Text for
+        Transformer Encoder Models
+      </p>
 
-          S. Z. Ridoy,
-          <span class="me">Jannat Sultana</span>,
-          Z. F. Ria,
-          M. A. Uddin,
-          Md. H. Rahman,
-          Rashedur M. Rahman
+      <p class="authors">
+        S. Z. Ridoy,
+        <span class="me">Jannat Sultana</span>,
+        Z. F. Ria,
+        M. A. Uddin,
+        Md. H. Rahman,
+        Rashedur M. Rahman
+      </p>
 
-        </p>
+      <p class="venue">
+        2024 IEEE 12th International Conference on Intelligent Systems (IS)
+      </p>
 
-        <p class="venue">
-          2024 IEEE 12th International Conference on Intelligent Systems (IS)
-        </p>
+      <p class="role">
+        Role: Project Lead
+      </p>
 
-        <p class="role">
-          Role: Project Lead
-        </p>
+      <div class="pub-links">
 
-        <p class="pub-links">
+        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mkQp4EMAAAAJ&citation_for_view=mkQp4EMAAAAJ:u-x6o8ySG0sC"
+           target="_blank">
+          paper
+        </a>
 
-          <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mkQp4EMAAAAJ&citation_for_view=mkQp4EMAAAAJ:u-x6o8ySG0sC"
-             target="_blank">
-            paper
-          </a>
+        <a href="papers/clinical-text-cleaning.pdf"
+           target="_blank">
+          pdf
+        </a>
 
-          <a href="papers/clinical-text-cleaning.pdf"
-             target="_blank">
-            pdf
-          </a>
-
-        </p>
-
-        <details>
+        <details class="abstract-inline">
 
           <summary>Abstract</summary>
 
           <p>
-           It might be challenging to choose the best text preprocessing strategy in the field of natural language processing (NLP) 
-            due to the variety of techniques available. Given the popularity of transformer models, we wondered if preprocessing was necessary and, 
-            if so, what methods would improve the models' performance. Especially when working with clinical text data, accuracy is crucial. Our goal 
-            was to find an appropriate pre-processing pipeline for clinical texts that maintains or improves model performance. We experienced four 
-            common preprocessing techniques and their groupings on two datasets from MIMIC-3 and PubMed. We used four models: BERT base, BioBERT, 
-            BioClinicalBERT, and RoBERTa. The varied accuracy results from existing techniques inspired us to develop a new pipeline to improve accuracy. 
-            Our pipeline starts with removing repeated punctuation, normalizing the text with a CleanText function, and filtering less important words using 
-            TF-IDF scores to keep clinically applicable terms and moderate noise. Our results presented that our pipeline outperformed the base models. 
-            For the MIMIC-3 dataset, the BERT base model achieved 90.16% accuracy, and for the PubMed dataset, BioBERT achieved 64.20% accuracy. 
-            We also found that removing stop words decreased accuracy, while using TF-IDF either maintained or improved it up to 3%. Additionally, 
+            It might be challenging to choose the best text preprocessing strategy in the field of natural language processing (NLP)
+            due to the variety of techniques available. Given the popularity of transformer models, we wondered if preprocessing was necessary and,
+            if so, what methods would improve the models' performance. Especially when working with clinical text data, accuracy is crucial. Our goal
+            was to find an appropriate pre-processing pipeline for clinical texts that maintains or improves model performance. We experienced four
+            common preprocessing techniques and their groupings on two datasets from MIMIC-3 and PubMed. We used four models: BERT base, BioBERT,
+            BioClinicalBERT, and RoBERTa. The varied accuracy results from existing techniques inspired us to develop a new pipeline to improve accuracy.
+            Our pipeline starts with removing repeated punctuation, normalizing the text with a CleanText function, and filtering less important words using
+            TF-IDF scores to keep clinically applicable terms and moderate noise. Our results presented that our pipeline outperformed the base models.
+            For the MIMIC-3 dataset, the BERT base model achieved 90.16% accuracy, and for the PubMed dataset, BioBERT achieved 64.20% accuracy.
+            We also found that removing stop words decreased accuracy, while using TF-IDF either maintained or improved it up to 3%. Additionally,
             as we removed less important words from the documents our pipeline considerably reduced training time up to 17%.
           </p>
 
@@ -1179,8 +1217,9 @@ Works
 
     </div>
 
-  </section>
+  </div>
 
+</section>
 
   <!-- =========================
        EDUCATION
@@ -1204,65 +1243,6 @@ Works
         Undergraduate research and teaching experience in computer science,
         with research interests spanning machine learning, natural language
         processing, and healthcare AI.
-      </p>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       SELECTED PROJECTS
-       ========================= -->
-
-  <section id="projects">
-
-    <h2>Selected Research &amp; Projects</h2>
-
-
-    <div class="entry">
-
-      <p class="title">
-        Hand Gesture Virtual Keyboard
-      </p>
-
-      <p>
-        A computer vision-based virtual keyboard that allows users to type
-        without physical contact using hand gestures captured through a
-        webcam.
-      </p>
-
-      <p class="entry-links">
-
-        <a href="https://github.com/Jannat-sultana/hand-gesture-virtual-keyboard"
-           target="_blank">
-          code &amp; demo
-        </a>
-
-      </p>
-
-    </div>
-
-
-    <div class="entry">
-
-      <p class="title">
-        Air Quality Analysis in Dhaka
-      </p>
-
-      <p>
-        Analysis of PM2.5 air quality data for Dhaka, focusing on trends,
-        preprocessing, and preparing hourly measurements — AQI, NowCast
-        Concentration, and AQI Category - for machine learning models.
-      </p>
-
-      <p class="entry-links">
-
-        <a href="https://github.com/Jannat-sultana/Air-Quality-Index-Prediction"
-           target="_blank">
-          code
-        </a>
-
       </p>
 
     </div>
