@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://jannat-sultana.github.io/JannatSultana.github.io/sitemap.xml
+Sitemap: https://jannat-sultana.github.io/sitemap.xml
