@@ -187,13 +187,26 @@
     }
 
     section h2 {
-      font-size: 16px;
-      font-weight: normal;
-      letter-spacing: 0.2px;
-      color: var(--text);
-      border-bottom: 1px solid var(--rule);
-      padding-bottom: 8px;
+      font-size: 15px;
+      font-weight: bold;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      color: #26384d;
+      border-bottom: 1px solid #cfd7e0;
+      padding-bottom: 9px;
       margin: 0 0 20px;
+      position: relative;
+    }
+
+    section h2::after {
+      content: "";
+      display: block;
+      width: 42px;
+      height: 2px;
+      background: #8b2432;
+      position: absolute;
+      left: 0;
+      bottom: -1px;
     }
 
     /* =========================
@@ -230,12 +243,26 @@
        NEWS
        ========================= */
 
+    #news {
+      background: #f5f7fa;
+      border: 1px solid #e1e6ec;
+      border-radius: 8px;
+      padding: 22px 22px 20px;
+      margin-left: -8px;
+      margin-right: -8px;
+    }
+
+    #news h2 {
+      margin-bottom: 16px;
+    }
+
     .news-box {
-      border: 1px solid var(--rule);
-      border-radius: 4px;
+      border: 1px solid #d9e0e8;
+      border-radius: 6px;
       max-height: 230px;
       overflow-y: auto;
       padding: 4px 16px;
+      background: #ffffff;
     }
 
     .news-list {
@@ -259,8 +286,9 @@
     .news-list .date {
       flex: none;
       width: 92px;
-      color: var(--muted);
+      color: #7b2532;
       font-size: 13.5px;
+      font-weight: bold;
       padding-top: 1px;
     }
 
@@ -510,11 +538,11 @@
        ========================= */
 
     footer {
-      margin-top: 64px;
+      margin-top: 82px;
       color: var(--muted);
       font-size: 13.5px;
-      border-top: 1px solid var(--rule);
-      padding-top: 18px;
+      border-top: 2px solid #cfd5dc;
+      padding-top: 20px;
     }
 
     /* =========================
@@ -562,6 +590,12 @@
 
       .news-list .date {
         width: auto;
+      }
+
+      #news {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 18px 16px 16px;
       }
 
     }
@@ -730,7 +764,7 @@
 
   <section id="research-interests">
 
-    <h2>Research Interests</h2>
+    <h2>Research Focus</h2>
 
     <ul class="interest-list">
 
@@ -759,7 +793,7 @@
 
   <section id="current-research">
 
-    <h2>Current Research</h2>
+    <h2>Research in Progress</h2>
 
     <div class="research-item">
 
@@ -785,7 +819,7 @@
 
   <section id="news">
 
-    <h2>News</h2>
+    <h2>Latest News</h2>
 
     <div class="news-box">
 
@@ -836,7 +870,7 @@
 
 <section id="publications">
 
-  <h2>Publications</h2>
+  <h2>Selected Publications</h2>
 
 
   <!-- Publication 1 -->
@@ -1222,7 +1256,7 @@
 
   <section id="education">
 
-    <h2>Education</h2>
+    <h2>Academic Background</h2>
 
     <div class="education-entry">
 
@@ -1273,7 +1307,7 @@
 
         <a href="image/Award_best_paper.pdf"
            target="_blank">
-          certificate
+          View credentials &rarr;
         </a>
 
       </p>
@@ -1303,7 +1337,7 @@
 
         <a href="image/Certificate of Achievement.pdf"
            target="_blank">
-          certificate
+          View credentials &rarr;
         </a>
 
       </p>
@@ -1332,7 +1366,7 @@
 
         <a href="image/stanford_certificate.jpeg"
            target="_blank">
-          certificate
+          View credentials &rarr;
         </a>
 
       </p>
@@ -1353,7 +1387,7 @@
 
         <a href="https://www.scribd.com/document/528095287/NSU-Grading-Policy"
            target="_blank">
-          grading policy
+          Grading policy
         </a>
 
       </p>
@@ -1369,7 +1403,7 @@
 
   <section id="experience">
 
-    <h2>Experience</h2>
+    <h2>Academic Experience</h2>
 
 
     <div class="row">
